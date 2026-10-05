@@ -1,315 +1,564 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="zh-Hant">
   <head>
-    <title>蘇祥育 | Eliot Su</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>蘇祥育 Eliot Su｜全端工程師</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="description"
+      content="蘇祥育 Eliot Su，全端工程師。我做只把一件事做好的小工具：Paper Radar、Jev Arena、點餐系統與電商網站。"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <meta property="og:title" content="蘇祥育 Eliot Su｜全端工程師" />
+    <meta
+      property="og:description"
+      content="我做只把一件事做好的小工具。Python、TypeScript、React、Node.js。"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/images/projects/paper-radar.jpg"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EES%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
   </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Header -->
-      <header id="header" class="alt">
-        <a href="index.html" class="logo"
-          ><strong>蘇祥育</strong> <span>Eliot</span></a
+  <body>
+    <a class="skip" href="#main">跳到主要內容</a>
+
+    <header class="nav" id="top">
+      <div class="container nav__inner">
+        <a class="brand" href="#top" aria-label="回到頁首">
+          <span class="brand__mark">ES</span>
+          <span class="brand__name">蘇祥育 <small>Eliot Su</small></span>
+        </a>
+        <button
+          class="nav__toggle"
+          aria-label="開啟選單"
+          aria-expanded="false"
+          aria-controls="nav-links"
         >
-        <nav>
-          <a href="#menu">Menu</a>
+          <span></span><span></span>
+        </button>
+        <nav class="nav__links" id="nav-links">
+          <a href="#work">作品</a>
+          <a href="#experience">經歷</a>
+          <a href="#skills">技能</a>
+          <a href="#certificates">證書</a>
+          <a href="#contact" class="nav__cta">聯絡我</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
-       <!-- Menu -->
-           <!-- Menu -->
-		   <nav id="menu">
-			<ul class="links">
-			  <li><a href="index.html">首頁</a></li>
-			  <li><a href="landing.html">ShiYueGuo◆拾月菓</a></li>
-			  <li><a href="landing-1.html">Zest Wear◆服飾品牌</a></li>
-			  <li><a href="landing-2.html">Netflix◆神隱少女</a></li>
-			  <li><a href="landing-3.html">Current Time◆當下的顏色</a></li>
-			</ul>
-			<ul class="actions stacked">
-			  <li><a href="#" class="button primary fit">Get Started</a></li>
-			  <!-- <li><a href="#" class="button fit">Log In</a></li> -->
-			</ul>
-		  </nav>
-
-      <!-- Banner -->
-      <section id="banner" class="major">
-        <div class="inner">
-          <header class="major">
-            <h1>你好🙋‍♂️我是蘇祥育😊</h1>
-          </header>
-          <div class="content">
-            <p>
-              我擁有兩年的程式語言自學經驗，我熱愛解決問題，並對前端和後端開發充滿熱情。<br />
-              我以學習迅速、享受編碼過程中的樂趣、渴望迎接新挑戰而自豪。<br>
-			  有領導團隊完成全端專案的經驗。這段經歷讓我學到了如何將創意轉化為具體的應用。
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__text">
+            <p class="eyebrow">全端工程師 · Full-stack Engineer · Taiwan</p>
+            <h1>
+              我做<span class="hl">只把一件事做好</span>的小工具。
+            </h1>
+            <p class="lead">
+              你好，我是蘇祥育（Eliot），目前在金全益擔任全端工程師，開發串接
+              ERP 與 WMS 的企業內部系統，把紙本和 Excel 流程變成好用的 Web
+              系統。工作之外，我用 Python 與 TypeScript 做開源工具，最近在研究：當模型便宜到可以跑過「所有」資料，而不只是一小部分樣本時，產品可以變成什麼樣子。
             </p>
-            <ul class="actions">
-              <li>
-                <a href="#one" class="button next scrolly">瀏覽作品</a>
-              </li>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#work">看我的作品</a>
+              <a
+                class="btn"
+                href="https://www.cakeresume.com/siang-yu-su"
+                target="_blank"
+                rel="noopener"
+                >線上履歷 ↗</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/Eliot5566"
+                target="_blank"
+                rel="noopener"
+                >GitHub ↗</a
+              >
+            </div>
+          </div>
+
+          <aside class="hero__card" aria-label="重點數字">
+            <div class="term">
+              <div class="term__bar"><i></i><i></i><i></i><span>paper-radar run</span></div>
+              <pre class="term__body"><span class="c">$</span> paper-radar run
+<span class="d">read</span>     50 new arXiv papers
+<span class="d">time</span>     5 s
+<span class="d">cost</span>     <span class="g">$0.002</span>
+<span class="d">picked</span>   12 shortlisted · 4 must-read
+<span class="c">$</span> <span class="cursor"></span></pre>
+            </div>
+            <ul class="stats">
+              <li><strong>40+</strong><span>公開 GitHub 專案</span></li>
+              <li><strong>28★</strong><span>Paper Radar 星數</span></li>
+              <li><strong>96.9%</strong><span>文獻篩選召回率</span></li>
             </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Featured work -->
+      <section class="section" id="work">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Selected Work</p>
+            <h2>精選作品</h2>
+            <p>每個專案都有可以直接打開的線上版本或原始碼。</p>
+          </header>
+
+          <article class="feature">
+            <a
+              class="feature__media"
+              href="https://eliot5566.github.io/JEV-Paper-Radar/public/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/projects/paper-radar.jpg"
+                alt="Paper Radar 每日頁面：讀了 50 篇論文，挑出 12 篇候選、4 篇必讀"
+                loading="lazy"
+              />
+            </a>
+            <div class="feature__body">
+              <p class="feature__kicker">2026 · 開源工具 · 28★</p>
+              <h3>Paper Radar</h3>
+              <p class="feature__tagline">
+                每天早上讀完 arXiv 上所有新論文，只把你該讀的那幾篇挑出來。
+              </p>
+              <ul class="bullets">
+                <li>
+                  用白話寫下研究興趣，模型對每篇論文、每個興趣回答一個是非題並給出校準過的機率，程式再依門檻決定必讀、可讀或略過。
+                </li>
+                <li>
+                  實測 501 篇論文 33 秒判讀完成，花費 $0.02；讀完整個 arXiv
+                  每天約 $0.06。
+                </li>
+                <li>
+                  在四份從未看過的 Cochrane 系統性回顧上篩選 19,447
+                  筆文獻，找回 96.9% 審查者納入的研究，同時減少 78% 的閱讀量。
+                </li>
+                <li>
+                  完全跑在 GitHub Actions + GitHub Pages，輸出網頁與 RSS，可推送到
+                  Slack、Discord、Telegram；fork 即可使用，不需伺服器。
+                </li>
+              </ul>
+              <ul class="tags">
+                <li>Python</li><li>GitHub Actions</li><li>RSS</li><li>LLM 評估</li><li>校準</li>
+              </ul>
+              <div class="links">
+                <a href="https://eliot5566.github.io/JEV-Paper-Radar/public/" target="_blank" rel="noopener">線上 Demo ↗</a>
+                <a href="https://github.com/Eliot5566/JEV-Paper-Radar" target="_blank" rel="noopener">原始碼 ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature feature--flip">
+            <a
+              class="feature__media"
+              href="https://eliot5566.github.io/jev-arena/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/projects/jev-arena.jpg"
+                alt="Jev Arena：兩個機器人即時對戰，旁邊顯示每個動作的機率"
+                loading="lazy"
+              />
+            </a>
+            <div class="feature__body">
+              <p class="feature__kicker">2026 · 開源遊戲 · npm 套件</p>
+              <h3>Jev Arena</h3>
+              <p class="feature__tagline">
+                用一段英文寫出你的戰士，讓模型在即時對戰中替它做反應。
+              </p>
+              <ul class="bullets">
+                <li>
+                  玩家用 YAML 寫策略與「反射動作」，模型每秒多次讀取戰場狀態，回傳帶機率的行動決策。
+                </li>
+                <li>
+                  天梯採 Elo 計分，透過 Pull Request 報名，GitHub Actions
+                  自動對戰並更新排名。
+                </li>
+                <li>
+                  「大腦」可抽換：Jev、其他模型或任何 LLM，用同一套規則比較快思與慢想。
+                </li>
+              </ul>
+              <ul class="tags">
+                <li>JavaScript</li><li>Canvas</li><li>npm</li><li>GitHub Actions</li><li>Elo 天梯</li>
+              </ul>
+              <div class="links">
+                <a href="https://eliot5566.github.io/jev-arena/" target="_blank" rel="noopener">觀看天梯 ↗</a>
+                <a href="https://github.com/Eliot5566/jev-arena" target="_blank" rel="noopener">原始碼 ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature__media feature__media--mock" aria-hidden="true">
+              <div class="mock">
+                <div class="mock__col">
+                  <b>顧客</b><span>掃碼入桌</span><span>菜單 / 購物車</span><span>我的訂單</span>
+                </div>
+                <div class="mock__col">
+                  <b>廚房</b><span>即時看板</span><span>出餐狀態</span>
+                </div>
+                <div class="mock__col">
+                  <b>管理後台</b><span>RBAC 權限</span><span>報表統計</span>
+                </div>
+              </div>
+            </div>
+            <div class="feature__body">
+              <p class="feature__kicker">2026 · 全端 MVP</p>
+              <h3>手機點餐系統</h3>
+              <p class="feature__tagline">
+                從掃碼點餐、廚房出餐到後台報表，一套給餐廳用的完整流程。
+              </p>
+              <ul class="bullets">
+                <li>
+                  三種角色各有介面：顧客掃碼入桌點餐並追蹤訂單狀態、廚房現場看板、管理者後台。
+                </li>
+                <li>
+                  後台以 RBAC 控管權限，內建營運 Dashboard 與報表。
+                </li>
+                <li>
+                  Next.js + Prisma + PostgreSQL，Docker Compose 一鍵起資料庫，Vitest 撰寫測試。
+                </li>
+              </ul>
+              <ul class="tags">
+                <li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Docker</li><li>Tailwind</li>
+              </ul>
+              <div class="links">
+                <a href="https://github.com/Eliot5566/orderSystem" target="_blank" rel="noopener">原始碼 ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature feature--flip">
+            <a
+              class="feature__media"
+              href="https://github.com/Eliot5566/Parking-Helper"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/projects/parking-helper.jpg"
+                alt="停車神隊友：停車標誌與停在車格裡的汽車插畫"
+                loading="lazy"
+              />
+            </a>
+            <div class="feature__body">
+              <p class="feature__kicker">2025 · LINE Bot</p>
+              <h3>停車神隊友</h3>
+              <p class="feature__tagline">
+                在 LINE 傳出你的位置，馬上知道附近哪裡還有車位。
+              </p>
+              <ul class="bullets">
+                <li>
+                  分享定位或直接輸入地址，就能查詢方圓 2.5 公里內的停車場或路邊停車格，依距離排出最近的 5 個。
+                </li>
+                <li>
+                  串接交通部 TDX 取得即時剩餘車位與收費資訊；資料不足時改用地方政府開放資料補上。
+                </li>
+                <li>
+                  用 Google Geocoding 解析地址，用 Distance Matrix 算出實際開車距離與時間。
+                </li>
+                <li>
+                  結果以 LINE Flex Message 卡片呈現，點一下就開啟 Google 地圖導航；另外提供 LIFF 頁面，並加上流量限制保護 API 額度。
+                </li>
+              </ul>
+              <ul class="tags">
+                <li>Node.js</li><li>Express</li><li>LINE Messaging API</li><li>LIFF</li><li>TDX API</li><li>Google Maps API</li>
+              </ul>
+              <div class="links">
+                <a href="https://github.com/Eliot5566/Parking-Helper" target="_blank" rel="noopener">原始碼 ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature">
+            <a
+              class="feature__media"
+              href="https://github.com/Eliot5566/E-Commerce-Website"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/projects/shiyueguo.jpg"
+                alt="拾月菓首頁：富士山與櫻花插畫"
+                loading="lazy"
+              />
+            </a>
+            <div class="feature__body">
+              <p class="feature__kicker">2023 · 結訓專題</p>
+              <h3>拾月菓｜日式和菓子電商</h3>
+              <p class="feature__tagline">
+                一個從前端、後端到資料庫都自己打造的完整電商網站。
+              </p>
+              <ul class="bullets">
+                <li>
+                  商品瀏覽、購物車、客製化禮盒（選尺寸、挑商品、選卡片）、歷史訂單與會員功能。
+                </li>
+                <li>
+                  bcrypt 加密密碼、JWT 驗證身分；串接 PayPal API 完成金流。
+                </li>
+                <li>
+                  React 前端 + Node.js / Express 後端，資料庫使用 Google Cloud
+                  SQL（MySQL），前後端分別部署在 Render。
+                </li>
+              </ul>
+              <ul class="tags">
+                <li>React</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>PayPal API</li><li>JWT</li>
+              </ul>
+              <div class="links">
+                <a href="https://last-frontendfinal.onrender.com/" target="_blank" rel="noopener">線上網站 ↗</a>
+                <a href="https://github.com/Eliot5566/E-Commerce-Website" target="_blank" rel="noopener">原始碼 ↗</a>
+              </div>
+              <p class="note">線上網站首次開啟需等待約 45 秒連線雲端資料庫。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- More projects -->
+      <section class="section section--alt" id="more">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">More Projects</p>
+            <h2>更多專案</h2>
+            <p>小而完整的工具、API 與介面練習。</p>
+          </header>
+
+          <div class="grid">
+            <a class="card" href="https://github.com/Eliot5566/US-stock-monitoring-and-query-system" target="_blank" rel="noopener">
+              <p class="card__meta">Python · Flask</p>
+              <h3>美股監控查詢系統</h3>
+              <p>即時查詢 1 分鐘盤前、盤後與收盤價，計算 RSI14、ATR、MA5/20/60，依台北時區自動切換時段，Pickle 快取減少 API 呼叫。</p>
+            </a>
+            <a class="card" href="https://github.com/Eliot5566/algorithm" target="_blank" rel="noopener">
+              <p class="card__meta">TypeScript · Express · Zod</p>
+              <h3>FAQ 管理 API</h3>
+              <p>FAQ 的 CRUD API，加上依提問內容做相似度比對找出最佳答案，含角色權限、Swagger 文件與單元測試。</p>
+            </a>
+            <a class="card" href="https://github.com/Eliot5566/pokemon" target="_blank" rel="noopener">
+              <p class="card__meta">React · Express · SQLite</p>
+              <h3>3D 列印球銷售紀錄系統</h3>
+              <p>管理耗材、產品、銷售紀錄與庫存的小型內部系統。</p>
+            </a>
+            <a class="card" href="https://github.com/Eliot5566/TaiwanHoliday" target="_blank" rel="noopener">
+              <p class="card__meta">API · 政府開放資料</p>
+              <h3>台灣國定假日 API</h3>
+              <p>依日期或年份查詢台灣假日，以 JSON 回傳，資料來自政府開放資料平台。</p>
+            </a>
+            <a class="card" href="https://github.com/Eliot5566/Flask-Python-React-Contacts" target="_blank" rel="noopener">
+              <p class="card__meta">Python · Flask · React</p>
+              <h3>聯絡人管理</h3>
+              <p>Flask REST API 搭配 React 前端的聯絡人新增、編輯、刪除應用，練習前後端分離架構。</p>
+            </a>
+            <a class="card" href="https://github.com/Eliot5566/Laravel-Todolist" target="_blank" rel="noopener">
+              <p class="card__meta">PHP · Laravel</p>
+              <h3>Laravel Todolist</h3>
+              <p>用 Laravel 實作的待辦事項應用，練習路由、Eloquent 與資料庫遷移。</p>
+            </a>
+            <a class="card card--img" href="https://eliot5566.github.io/sideProjectZest/" target="_blank" rel="noopener">
+              <img src="images/projects/zest.jpg" alt="" loading="lazy" />
+              <p class="card__meta">HTML · CSS · RWD</p>
+              <h3>Zest Wear 服飾品牌</h3>
+              <p>參考知名服飾品牌打造的靜態形象網站，注重字體、配色與互動細節。</p>
+            </a>
+            <a class="card card--img" href="https://eliot5566.github.io/netflix-Spirited-Away/" target="_blank" rel="noopener">
+              <img src="images/projects/netflix.jpg" alt="" loading="lazy" />
+              <p class="card__meta">HTML · Bootstrap</p>
+              <h3>Netflix 神隱少女</h3>
+              <p>重新設計的神隱少女介紹頁，RWD 響應式版面。</p>
+            </a>
+            <a class="card card--img" href="https://eliot5566.github.io/colorTime/" target="_blank" rel="noopener">
+              <img src="images/projects/colortime.jpg" alt="" loading="lazy" />
+              <p class="card__meta">JavaScript · jQuery</p>
+              <h3>當下的顏色</h3>
+              <p>背景顏色隨一天中的時間流動變化，也可以切換時區。</p>
+            </a>
+          </div>
+
+          <p class="more-link">
+            <a href="https://github.com/Eliot5566?tab=repositories" target="_blank" rel="noopener">在 GitHub 看全部專案 ↗</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Experience</p>
+            <h2>經歷</h2>
+            <p>先在醫療與製造業累積流程協調經驗，2023 年轉職工程師，現在專注於企業系統與流程數位化。</p>
+          </header>
+
+          <ol class="timeline">
+            <li class="timeline__current">
+              <div class="timeline__when">2023.11 – 至今</div>
+              <div class="timeline__what">
+                <h3>全端工程師</h3>
+                <p class="timeline__org">金全益股份有限公司</p>
+                <p class="timeline__focus">企業內部資訊系統｜ERP / WMS 整合｜流程數位化</p>
+                <ul>
+                  <li>負責企業內部 Web 系統從需求分析、資料庫設計到前後端開發與正式環境排錯的完整流程。</li>
+                  <li>以 Next.js / React 開發多層簽核系統，包含權限控管、代理簽核、SLA、Email 通知、PDF 匯出與歷程追蹤。</li>
+                  <li>將品質異常處理、樣品開發、採購與工單等人工或 Excel 流程，轉成可追蹤的 Web 系統。</li>
+                  <li>串接鼎新 TIPTOP ERP（Oracle），以 SQL Server OPENQUERY 與 CTE 建置採購交期、供應商達交率、設備產能等管理報表。</li>
+                  <li>參與鼎新智能物流 WMS 整合，跨 Oracle、SQL Server、MySQL 比對資料，並從 API、Log 到資料庫逐層定位同步異常。</li>
+                </ul>
+                <ul class="tags">
+                  <li>Next.js</li><li>React</li><li>ASP.NET Web Forms</li><li>VB.NET</li><li>SQL Server</li><li>Oracle</li><li>MySQL</li><li>REST API</li><li>TIPTOP ERP</li><li>WMS</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__when">2023.05 – 2023.10</div>
+              <div class="timeline__what">
+                <h3>前端工程師就業養成班</h3>
+                <p class="timeline__org">資展國際股份有限公司</p>
+                <ul>
+                  <li>獨立設計並實作全端電商網站「拾月菓」（React、Node.js、MySQL）。</li>
+                  <li>帶領團隊完成全端專案，學會把創意轉成可上線的應用。</li>
+                  <li>透過實作與團隊專案強化前端、後端與協作能力。</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__when">2021.04 – 2023.05</div>
+              <div class="timeline__what">
+                <h3>助理</h3>
+                <p class="timeline__org">立育實業有限公司</p>
+                <ul>
+                  <li>協調印刷專案所需的原料、設備與人力，與供應商及團隊合作確保資源準時到位。</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__when">2019.04 – 2020.01</div>
+              <div class="timeline__what">
+                <h3>醫檢助理</h3>
+                <p class="timeline__org">彰化基督教醫院</p>
+                <ul>
+                  <li>管理院內外研究計畫與委外檢驗專案，籌辦各類會議並撰寫會議紀錄。</li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline__edu">
+              <div class="timeline__when">2014 – 2018</div>
+              <div class="timeline__what">
+                <h3>醫務管理系 學士</h3>
+                <p class="timeline__org">弘光科技大學</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section section--alt" id="skills">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Skills</p>
+            <h2>技能</h2>
+          </header>
+          <div class="skills">
+            <div class="skill">
+              <h3>語言</h3>
+              <ul class="tags"><li>TypeScript</li><li>JavaScript (ES6+)</li><li>Python</li><li>VB.NET</li><li>SQL / Oracle SQL</li><li>PHP</li><li>HTML5 / CSS3 / Sass</li></ul>
+            </div>
+            <div class="skill">
+              <h3>前端</h3>
+              <ul class="tags"><li>React</li><li>Next.js</li><li>Redux</li><li>Tailwind CSS</li><li>Bootstrap 5</li><li>GSAP</li><li>RWD</li></ul>
+            </div>
+            <div class="skill">
+              <h3>後端與資料</h3>
+              <ul class="tags"><li>Node.js</li><li>Express</li><li>ASP.NET Web Forms</li><li>Flask</li><li>Laravel</li><li>Prisma</li><li>SQL Server</li><li>Oracle</li><li>PostgreSQL</li><li>MySQL</li><li>SQLite</li><li>GraphQL</li><li>RESTful API</li></ul>
+            </div>
+            <div class="skill">
+              <h3>工具與部署</h3>
+              <ul class="tags"><li>Git / GitHub</li><li>GitHub Actions</li><li>GitHub Pages</li><li>Docker</li><li>Render</li><li>Google Cloud SQL</li><li>Vitest</li><li>LINE LIFF</li><li>PayPal API</li></ul>
+            </div>
+            <div class="skill">
+              <h3>AI 應用</h3>
+              <ul class="tags"><li>LLM 分類與判讀</li><li>機率校準</li><li>成本與準確率評估</li><li>提示設計</li></ul>
+            </div>
+            <div class="skill">
+              <h3>語言能力</h3>
+              <ul class="tags"><li>中文（母語）</li><li>英文 CEFR B1（CSEPT）</li></ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Main -->
-      <div id="main">
-        <!-- One -->
-        <section id="one" class="tiles">
-          <article>
-            <span class="image">
-              <img src="images/pic01.jpg" alt="" />
-            </span>
-            <header class="major">
-              <h3><a href="landing.html" class="link"></a>拾月菓—日式和菓子品牌</h3>
-              <p>一個完整的電子商務網站，<br />涵蓋了前端和後端與資料庫。</p>
-            </header>
-          </article>
-
-          <article>
-            <span class="image">
-              <img src="images/pic02.jpg" alt="" />
-            </span>
-            <header class="major">
-              <h3>
-                <a href="landing-1.html" class="link">Zest Wear 服飾品牌 </a>
-              </h3>
-              <p>一個靜態服裝網站，具有知名品牌的真實感覺。</p>
-            </header>
-          </article>
-
-          <article>
-            <span class="image">
-              <img src="images/pic03.jpg" alt="" />
-            </span>
-            <header class="major">
-              <h3><a href="landing-2.html" class="link"></a>Netflix 神隱少女</h3>
-              <p>使用HTML、CSS、Bootstrap建構RWD響應式神隱少女介紹頁面</p>
-            </header>
-          </article>
-          <article>
-            <span class="image">
-              <img src="images/pic04.jpg" alt="" />
-            </span>
-            <header class="major">
-              <h3><a href="landing-3.html" class="link">當下的顏色</a></h3>
-              <p>透過jQuery<br />
-                根據用戶當地時間背景顏色<br />隨著一天中時間的推移而和諧地變化。
-              </p>
-            </header>
-          </article>
-          <!-- <article>
-            <span class="image">
-              <img src="images/pic05.jpg" alt="" />
-            </span>
-            <header class="major">
-              <h3><a href="landing.html" class="link">Consequat</a></h3>
-              <p>Ipsum dolor sit amet</p>
-            </header>
-          </article> -->
-          <!-- <article>
-            <span class="image">
-              <img src="images/pic06.jpg" alt="" />
-            </span>
-            <header class="major">
-              <h3><a href="landing.html" class="link">Etiam</a></h3>
-              <p>Feugiat amet tempus</p>
-            </header>
-          </article> -->
-        </section>
-
-        <!-- Two -->
-        <section id="two">
-          <div class="inner">
-            <header class="major">
-              <h2>相關證書</h2>
-            </header>
-            <ul>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/2MRJZ3342VAK"
-                  >Interactivity with JavaScript University of Michigan</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/NS2FEJQE8GJ4"
-                >
-                  React Basics Meta</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/DBYPMS3WUPTA"
-                  >Advanced React Meta</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/QUMW7KVJ3BG2"
-                  >Programming with JavaScript Meta</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/PB7FEXDVK77W"
-                  >Introduction to Front-End Development Meta</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/283U8ASDQ6YZ"
-                  >Introduction to HTML5 University of Michigan</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/8FMHRJ54KAU2"
-                >
-                  HTML, CSS, and Javascript for Web Developers Johns Hopkins
-                  University</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/NF8UXU8TTNED"
-                  >Introduction to CSS3 University of Michigan</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/JZUR8L9HBFGE"
-                  >Python Data Structures University of Michigan</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/YMMEAGXYWPSQ"
-                >
-                  Introduction to Data Science in Python University of
-                  Michigan</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/2MRJZ3342VAK"
-                >
-                  Introduction to Big Data University of California San Diego</a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
+      <!-- Certificates -->
+      <section class="section" id="certificates">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Certificates</p>
+            <h2>相關證書</h2>
+            <p>Coursera 課程證書，點擊可查看驗證頁面。</p>
+          </header>
+          <ul class="certs">
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/DBYPMS3WUPTA" target="_blank" rel="noopener"><b>Advanced React</b><span>Meta</span></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/NS2FEJQE8GJ4" target="_blank" rel="noopener"><b>React Basics</b><span>Meta</span></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/QUMW7KVJ3BG2" target="_blank" rel="noopener"><b>Programming with JavaScript</b><span>Meta</span></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/PB7FEXDVK77W" target="_blank" rel="noopener"><b>Introduction to Front-End Development</b><span>Meta</span></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/2MRJZ3342VAK" target="_blank" rel="noopener"><b>Interactivity with JavaScript</b><span>University of Michigan</span></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/283U8ASDQ6YZ" target="_blank" rel="noopener"><b>Introduction to HTML5</b><span>University of Michigan</span></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/NF8UXU8TTNED" target="_blank" rel="noopener"><b>Introduction to CSS3</b><span>University of Michigan</span></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/8FMHRJ54KAU2" target="_blank" rel="noopener"><b>HTML, CSS, and JavaScript for Web Developers</b><span>Johns Hopkins University</span></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/JZUR8L9HBFGE" target="_blank" rel="noopener"><b>Python Data Structures</b><span>University of Michigan</span></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/YMMEAGXYWPSQ" target="_blank" rel="noopener"><b>Introduction to Data Science in Python</b><span>University of Michigan</span></a></li>
+            <!-- 原網站此證書連結與 Interactivity with JavaScript 相同，待確認正確網址 -->
+            <li><span class="certs__nolink"><b>Introduction to Big Data</b><span>UC San Diego</span></span></li>
+          </ul>
+        </div>
+      </section>
 
       <!-- Contact -->
-      <section id="contact">
-        <div class="inner">
-          <section>
-            <form method="post" action="#">
-              <div class="fields">
-                <div class="field half">
-                  <label for="name">姓名</label>
-                  <input type="text" name="name" id="name" />
-                </div>
-                <div class="field half">
-                  <label for="email">Email</label>
-                  <input type="text" name="email" id="email" />
-                </div>
-                <div class="field">
-                  <label for="message">訊息</label>
-                  <textarea name="message" id="message" rows="6"></textarea>
-                </div>
-              </div>
-              <ul class="actions">
-                <li>
-                  <input type="submit" value="送出訊息" class="primary" />
-                </li>
-                <li><input type="reset" value="清空" /></li>
-              </ul>
-            </form>
-          </section>
-          <section class="split">
-            <section>
-              <div class="contact-method">
-                <span class="icon solid alt fa-envelope"></span>
-                <h3>Email</h3>
-                <a href="#">a7868783@gmail.com</a>
-              </div>
-            </section>
-            <section>
-              <div class="contact-method">
-                <span class="icon solid alt fa-phone"></span>
-                <h3>Phone</h3>
-                <span> 0970-379-976</span>
-              </div>
-            </section>
-            <section>
-              <div class="contact-method">
-                <span class="icon brands alt fa-github"></span>
-                <h3>GitHub</h3>
-                <span
-                  ><a href="https://github.com/Eliot5566">Eliot5566</a><br />
-               
-                
-              </div>
-            </section>
-          </section>
+      <section class="section contact" id="contact">
+        <div class="container contact__inner">
+          <p class="eyebrow">Contact</p>
+          <h2>一起做點什麼吧</h2>
+          <p class="lead">
+            歡迎聊聊企業系統、流程數位化、開源工具或 AI 應用，也歡迎合作邀約。
+          </p>
+          <a class="btn btn--primary btn--lg" href="mailto:a7868783@gmail.com">a7868783@gmail.com</a>
+          <ul class="socials">
+            <li><a href="https://github.com/Eliot5566" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/eliot-su-6a834227b/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.cakeresume.com/siang-yu-su" target="_blank" rel="noopener">CakeResume</a></li>
+            <li><a href="https://www.instagram.com/a7868781/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
         </div>
       </section>
+    </main>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="inner">
-          <ul class="icons">
-          
-          
-            <li>
-              <a href="https://www.instagram.com/a7868781/" class="icon brands alt fa-instagram"
-                ><span class="label">Instagram</span></a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/Eliot5566" class="icon brands alt fa-github"
-                ><span class="label">GitHub</span></a
-              >
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/eliot-su-6a834227b/" class="icon brands alt fa-linkedin-in"
-                ><span class="label">LinkedIn</span></a
-              >
-            </li>
-          </ul>
-          <ul class="copyright">
-            <li>&copy; 2023 Eliot copyright</li>
-          
-          </ul>
-        </div>
-      </footer>
-    </div>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year">2026</span> 蘇祥育 Eliot Su</span>
+        <a href="#top">回到頁首 ↑</a>
+      </div>
+    </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/site.js"></script>
   </body>
 </html>
