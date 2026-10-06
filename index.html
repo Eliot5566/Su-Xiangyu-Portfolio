@@ -6,110 +6,346 @@
     <title>蘇祥育 Eliot Su｜全端工程師</title>
     <meta
       name="description"
-      content="蘇祥育 Eliot Su，全端工程師。我做只把一件事做好的小工具：Paper Radar、Jev Arena、點餐系統與電商網站。"
+      content="蘇祥育 Eliot Su，金全益 MasterPiece 全端工程師。專注 ERP / WMS 整合、簽核流程與企業系統數位化，也打造 Paper Radar、Jev Arena 等開源工具。"
     />
-    <meta property="og:title" content="蘇祥育 Eliot Su｜全端工程師" />
-    <meta
-      property="og:description"
-      content="我做只把一件事做好的小工具。Python、TypeScript、React、Node.js。"
-    />
+    <meta name="author" content="蘇祥育 Eliot Su" />
+    <link rel="canonical" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/" />
+    <link rel="alternate" hreflang="en" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/" />
+
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/"
-    />
-    <meta
-      property="og:image"
-      content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/images/projects/paper-radar.jpg"
-    />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EES%3C/text%3E%3C/svg%3E"
-    />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content="蘇祥育 Eliot Su" />
+    <meta property="og:title" content="蘇祥育 Eliot Su｜全端工程師" />
+    <meta property="og:description" content="把複雜的流程，變成好用的系統。ERP / WMS 整合、企業系統數位化與開源工具。" />
+    <meta property="og:url" content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/" />
+    <meta property="og:image" content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d1014" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/site.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "蘇祥育",
+        "alternateName": ["Eliot Su", "Siang Yu Su"],
+        "jobTitle": "全端工程師",
+        "worksFor": { "@type": "Organization", "name": "金全益股份有限公司 MasterPiece" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "弘光科技大學" },
+        "address": { "@type": "PostalAddress", "addressCountry": "TW" },
+        "email": "mailto:a7868783@gmail.com",
+        "url": "https://eliot5566.github.io/Su-Xiangyu-Portfolio/",
+        "sameAs": [
+          "https://github.com/Eliot5566",
+          "https://www.linkedin.com/in/eliot-su-6a834227b/",
+          "https://www.cakeresume.com/siang-yu-su"
+        ],
+        "knowsAbout": ["Next.js", "React", "TypeScript", "Node.js", "SQL Server", "Oracle", "ERP", "WMS", "Python"]
+      }
+    </script>
   </head>
   <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-flow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v3a2 2 0 0 0 2 2H14M17.5 14v-3a2 2 0 0 0-2-2H10"/></symbol>
+      <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+      <symbol id="i-printer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-hash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12"/></symbol>
+    </svg>
+
     <a class="skip" href="#main">跳到主要內容</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
 
     <header class="nav" id="top">
       <div class="container nav__inner">
-        <a class="brand" href="#top" aria-label="回到頁首">
-          <span class="brand__mark">ES</span>
-          <span class="brand__name">蘇祥育 <small>Eliot Su</small></span>
+        <a class="brand" href="#top" aria-label="蘇祥育 Eliot Su，回到頁首">
+          <span class="brand__mark" aria-hidden="true">ES</span>
+          <span class="brand__name">蘇祥育<small>Eliot Su</small></span>
         </a>
-        <button
-          class="nav__toggle"
-          aria-label="開啟選單"
-          aria-expanded="false"
-          aria-controls="nav-links"
-        >
-          <span></span><span></span>
-        </button>
-        <nav class="nav__links" id="nav-links">
-          <a href="#work">作品</a>
+
+        <nav class="nav__links" id="nav-links" aria-label="主要導覽">
+          <a href="#about">關於</a>
           <a href="#experience">經歷</a>
+          <a href="#work">作品</a>
           <a href="#skills">技能</a>
-          <a href="#certificates">證書</a>
-          <a href="#contact" class="nav__cta">聯絡我</a>
+          <a href="#contact">聯絡</a>
         </nav>
+
+        <div class="nav__tools">
+          <button class="icon-btn kbd-btn" type="button" data-palette-open aria-label="開啟快速選單" aria-keyshortcuts="Control+K Meta+K /">
+            <svg class="i"><use href="#i-search" /></svg><kbd aria-hidden="true">Ctrl K</kbd>
+          </button>
+          <a class="icon-btn lang" href="en/" hreflang="en" lang="en" aria-label="Switch to English">EN</a>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="切換深色模式">
+            <svg class="i i--sun"><use href="#i-sun" /></svg>
+            <svg class="i i--moon"><use href="#i-moon" /></svg>
+          </button>
+          <a class="btn btn--primary btn--sm nav__cta" href="#contact">聯絡我</a>
+          <button class="nav__toggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
 
     <main id="main">
+      <header class="print-only print-header container">
+        <h2>蘇祥育 Eliot Su · 全端工程師</h2>
+        <p>a7868783@gmail.com · github.com/Eliot5566 · linkedin.com/in/eliot-su-6a834227b · eliot5566.github.io/Su-Xiangyu-Portfolio</p>
+      </header>
       <!-- Hero -->
       <section class="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__spot" aria-hidden="true"></div>
         <div class="container hero__grid">
           <div class="hero__text">
-            <p class="eyebrow">全端工程師 · Full-stack Engineer · Taiwan</p>
-            <h1>
-              我做<span class="hl">只把一件事做好</span>的小工具。
-            </h1>
-            <p class="lead">
-              你好，我是蘇祥育（Eliot），目前在金全益擔任全端工程師，開發串接
-              ERP 與 WMS 的企業內部系統，把紙本和 Excel 流程變成好用的 Web
-              系統。工作之外，我用 Python 與 TypeScript 做開源工具，最近在研究：當模型便宜到可以跑過「所有」資料，而不只是一小部分樣本時，產品可以變成什麼樣子。
+            <p class="status" data-enter style="--d: 0.05s"><span class="status__dot"></span>現任 金全益 MasterPiece 全端工程師</p>
+            <h1><span class="line" data-enter style="--d: 0.15s">把複雜的流程，</span><br /><span class="line" data-enter style="--d: 0.25s">變成<span class="hl">好用的系統</span>。</span></h1>
+            <p class="lead" data-enter style="--d: 0.35s">
+              我是蘇祥育 Eliot，一位懂現場的全端工程師。白天串接 ERP、WMS
+              與多層簽核，把紙本和 Excel 變成可追蹤的 Web 系統；下班後做只把一件事做好的開源小工具。
             </p>
-            <div class="hero__actions">
-              <a class="btn btn--primary" href="#work">看我的作品</a>
-              <a
-                class="btn"
-                href="https://www.cakeresume.com/siang-yu-su"
-                target="_blank"
-                rel="noopener"
-                >線上履歷 ↗</a
-              >
-              <a
-                class="btn btn--ghost"
-                href="https://github.com/Eliot5566"
-                target="_blank"
-                rel="noopener"
-                >GitHub ↗</a
-              >
+            <div class="hero__actions" data-enter style="--d: 0.45s">
+              <a class="btn btn--primary btn--lg" href="#work">看我的作品<svg class="i"><use href="#i-arrow-down" /></svg></a>
+              <a class="btn btn--lg" href="https://www.cakeresume.com/siang-yu-su" target="_blank" rel="noopener"><svg class="i"><use href="#i-file" /></svg>線上履歷</a>
+              <a class="icon-btn icon-btn--lg" href="https://github.com/Eliot5566" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github" /></svg></a>
+              <a class="icon-btn icon-btn--lg" href="https://www.linkedin.com/in/eliot-su-6a834227b/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin" /></svg></a>
             </div>
           </div>
 
-          <aside class="hero__card" aria-label="重點數字">
+          <div class="hero__card" data-enter style="--d: 0.3s">
             <div class="term">
-              <div class="term__bar"><i></i><i></i><i></i><span>paper-radar run</span></div>
-              <pre class="term__body"><span class="c">$</span> paper-radar run
+              <div class="term__bar">
+                <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <div class="term__tabs" role="tablist" aria-label="程式碼範例">
+                  <button type="button" role="tab" id="tab-profile" aria-selected="true" aria-controls="panel-profile">profile.ts</button>
+                  <button type="button" role="tab" id="tab-radar" aria-selected="false" aria-controls="panel-radar" tabindex="-1">paper-radar</button>
+                </div>
+              </div>
+<pre class="term__body" role="tabpanel" id="panel-profile" aria-labelledby="tab-profile"><span class="k">const</span> <span class="v">eliot</span> = {
+  role:    <span class="s">"Full-stack Engineer"</span>,
+  company: <span class="s">"MasterPiece 金全益"</span>,
+  since:   <span class="n">2023</span>,
+  focus:   [<span class="s">"ERP / WMS 整合"</span>, <span class="s">"流程數位化"</span>],
+  stack:   [<span class="s">"Next.js"</span>, <span class="s">"SQL Server"</span>, <span class="s">"Oracle"</span>],
+  hobby:   <span class="s">"做只把一件事做好的工具"</span>,
+};</pre>
+<pre class="term__body" role="tabpanel" id="panel-radar" aria-labelledby="tab-radar" hidden><span class="c">$</span> paper-radar run
 <span class="d">read</span>     50 new arXiv papers
 <span class="d">time</span>     5 s
 <span class="d">cost</span>     <span class="g">$0.002</span>
 <span class="d">picked</span>   12 shortlisted · 4 must-read
 <span class="c">$</span> <span class="cursor"></span></pre>
             </div>
-            <ul class="stats">
-              <li><strong>40+</strong><span>公開 GitHub 專案</span></li>
-              <li><strong>28★</strong><span>Paper Radar 星數</span></li>
-              <li><strong>96.9%</strong><span>文獻篩選召回率</span></li>
+          </div>
+        </div>
+
+        <div class="container">
+          <ul class="stats" data-enter style="--d: 0.6s">
+            <li><strong>近 3 年</strong><span>企業系統全端開發</span></li>
+            <li><strong><span data-count="3">3</span> 種</strong><span>資料庫跨庫整合<br />Oracle · SQL Server · MySQL</span></li>
+            <li><strong><span data-count="40">40</span>+</strong><span>GitHub 公開專案</span></li>
+            <li><strong><span data-count="96.9" data-decimals="1">96.9</span>%</strong><span>Paper Radar<br />文獻篩選召回率</span></li>
+          </ul>
+        </div>
+
+        <div class="marquee" aria-hidden="true" data-enter style="--d: 0.75s">
+          <div class="marquee__track">
+            <ul><li>Next.js</li><li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>ASP.NET Web Forms</li><li>VB.NET</li><li>SQL Server</li><li>Oracle</li><li>MySQL</li><li>PostgreSQL</li><li>Prisma</li><li>Python</li><li>Flask</li><li>Docker</li><li>GitHub Actions</li><li>REST API</li><li>LINE Messaging API</li><li>Google Maps API</li><li>TIPTOP ERP</li><li>WMS</li><li>Tailwind CSS</li></ul>
+            <ul aria-hidden="true"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>ASP.NET Web Forms</li><li>VB.NET</li><li>SQL Server</li><li>Oracle</li><li>MySQL</li><li>PostgreSQL</li><li>Prisma</li><li>Python</li><li>Flask</li><li>Docker</li><li>GitHub Actions</li><li>REST API</li><li>LINE Messaging API</li><li>Google Maps API</li><li>TIPTOP ERP</li><li>WMS</li><li>Tailwind CSS</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow"><span>01</span>關於我</p>
+            <h2>懂現場的工程師</h2>
+          </header>
+
+          <div class="about">
+            <div class="about__story">
+              <p>
+                我的起點不是資工系。醫務管理系畢業後，我在彰化基督教醫院管理研究計畫與委外檢驗專案，又在製造業協調印刷專案的原料、設備與人力。
+              </p>
+              <p>
+                這些年讓我習慣<strong>先弄懂現場怎麼運作，再決定系統該長什麼樣子</strong>。2023
+                年轉職工程師後，這成了我最大的優勢：能跟使用部門講同一種語言，把需求翻譯成資料欄位、流程規則與程式。
+              </p>
+              <ul class="facts">
+                <li><svg class="i"><use href="#i-pin" /></svg>台灣</li>
+                <li><svg class="i"><use href="#i-cap" /></svg>弘光科技大學 醫務管理系</li>
+                <li><svg class="i"><use href="#i-globe" /></svg>中文（母語）· 英文 CEFR B1</li>
+              </ul>
+            </div>
+
+            <div class="pillars">
+              <article class="pillar">
+                <span class="pillar__icon"><svg class="i"><use href="#i-flow" /></svg></span>
+                <h3>企業流程數位化</h3>
+                <p>多層簽核、權限與代理、SLA、Email 通知、PDF 匯出與歷程追蹤，把 Excel 流程變成可追蹤的系統。</p>
+              </article>
+              <article class="pillar">
+                <span class="pillar__icon"><svg class="i"><use href="#i-db" /></svg></span>
+                <h3>ERP / WMS 資料整合</h3>
+                <p>串接鼎新 TIPTOP ERP 與智能物流 WMS，跨 Oracle、SQL Server、MySQL 整合資料並做成管理報表。</p>
+              </article>
+              <article class="pillar">
+                <span class="pillar__icon"><svg class="i"><use href="#i-spark" /></svg></span>
+                <h3>全端產品與 AI 工具</h3>
+                <p>從 Next.js、Node.js 到 LINE Bot 與 LLM 判讀工具，獨立把想法做到上線，並量測成本與準確率。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="process">
+            <h3 class="subhead">我的工作方式</h3>
+            <ol class="steps">
+              <li><span class="steps__num" aria-hidden="true">01</span><h4>走進現場</h4><p>先跟使用部門釐清實際作業流程、例外狀況與痛點，而不只是看需求單。</p></li>
+              <li><span class="steps__num" aria-hidden="true">02</span><h4>設計資料與流程</h4><p>把需求翻譯成資料欄位、流程規則與權限，先弄清楚資料從哪裡來、流向哪裡。</p></li>
+              <li><span class="steps__num" aria-hidden="true">03</span><h4>開發與串接</h4><p>前後端與資料庫一起處理，串接 ERP、WMS 與既有系統，並驗證跨系統的資料一致性。</p></li>
+              <li><span class="steps__num" aria-hidden="true">04</span><h4>上線後持續優化</h4><p>從實際使用狀況與 Log 找問題，依使用部門回饋調整功能，讓系統真的被用起來。</p></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section section--alt" id="experience">
+        <div class="container">
+          <header class="section__head section__head--row">
+            <div>
+              <p class="eyebrow"><span>02</span>經歷</p>
+              <h2>工作經歷</h2>
+              <p class="section__sub">從醫療、製造業的流程協調，到為企業打造串接 ERP 與 WMS 的系統。</p>
+            </div>
+            <button class="btn" type="button" data-print><svg class="i"><use href="#i-printer" /></svg>列印／存成 PDF 履歷</button>
+          </header>
+
+          <article class="job">
+            <header class="job__head">
+              <span class="job__logo" aria-hidden="true">金</span>
+              <div class="job__title">
+                <h3>全端工程師 <span class="badge">現職</span></h3>
+                <p>金全益股份有限公司 · MasterPiece</p>
+              </div>
+              <p class="job__when">2023.11 – 至今</p>
+            </header>
+            <p class="job__summary">
+              負責企業內部資訊系統從需求訪談、資料庫設計、前後端開發到正式環境排錯的完整流程，連接 ERP、WMS 與現場作業。
+            </p>
+
+            <div class="job__areas">
+              <section class="area">
+                <h4><svg class="i"><use href="#i-flow" /></svg>流程數位化</h4>
+                <ul>
+                  <li>以 Next.js / React 開發多層簽核系統：權限控管、代理簽核、SLA、Email 通知、PDF 匯出與歷程追蹤。</li>
+                  <li>將品質異常、樣品開發、採購與工單等人工或 Excel 流程轉為 Web 系統，並依使用部門回饋持續優化。</li>
+                </ul>
+              </section>
+              <section class="area">
+                <h4><svg class="i"><use href="#i-db" /></svg>ERP 整合與管理報表</h4>
+                <ul>
+                  <li>串接鼎新 TIPTOP / TTOP ERP（Oracle），以 SQL Server OPENQUERY 與多表 JOIN 整合料件、BOM、工單、採購、收貨與庫存資料。</li>
+                  <li>以 CTE、暫存表與彙總運算建置採購交期、供應商達交率、設備產能與維護達成率等報表。</li>
+                  <li>以 ASP.NET Web Forms、VB.NET 開發內部管理與報表系統。</li>
+                </ul>
+              </section>
+              <section class="area">
+                <h4><svg class="i"><use href="#i-spark" /></svg>WMS 整合與問題排查</h4>
+                <ul>
+                  <li>參與鼎新智能物流 WMS 整合，串接 WMS API 與 Oracle ERP，追蹤工單入庫與 ERP 回寫流程。</li>
+                  <li>跨 Oracle、SQL Server、MySQL 比對資料，找出數量差異、遺漏、重複轉入與同步失敗。</li>
+                  <li>從 API、Application Log、Java Adapter / JDBC 連線池到資料庫，逐層定位服務異常。</li>
+                </ul>
+              </section>
+            </div>
+
+            <ul class="tags">
+              <li>Next.js</li><li>React</li><li>ASP.NET Web Forms</li><li>VB.NET</li><li>SQL Server</li><li>Oracle</li><li>MySQL</li><li>REST API</li><li>JDBC</li><li>鼎新 TIPTOP ERP</li><li>鼎新智能物流 WMS</li>
             </ul>
-          </aside>
+          </article>
+
+          <h3 class="subhead">更早的經歷</h3>
+          <ol class="timeline">
+            <li>
+              <p class="timeline__when">2023.05 – 2023.10</p>
+              <div>
+                <h4>前端工程師就業養成班</h4>
+                <p class="timeline__org">資展國際股份有限公司</p>
+                <p>獨立設計並實作全端電商網站「拾月菓」（React、Node.js、MySQL），並帶領團隊完成全端專案。</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">2021.04 – 2023.05</p>
+              <div>
+                <h4>助理</h4>
+                <p class="timeline__org">立育實業有限公司</p>
+                <p>協調印刷專案所需的原料、設備與人力，與供應商及團隊合作確保資源準時到位。</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">2019.04 – 2020.01</p>
+              <div>
+                <h4>醫檢助理</h4>
+                <p class="timeline__org">彰化基督教醫院</p>
+                <p>管理院內外研究計畫與委外檢驗專案，籌辦各類會議並撰寫會議紀錄。</p>
+              </div>
+            </li>
+            <li class="timeline__edu">
+              <p class="timeline__when">2014 – 2018</p>
+              <div>
+                <h4>醫務管理系 學士</h4>
+                <p class="timeline__org">弘光科技大學</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -117,94 +353,58 @@
       <section class="section" id="work">
         <div class="container">
           <header class="section__head">
-            <p class="eyebrow">Selected Work</p>
+            <p class="eyebrow"><span>03</span>作品</p>
             <h2>精選作品</h2>
-            <p>每個專案都有可以直接打開的線上版本或原始碼。</p>
+            <p>工作之外的作品，每一個都能直接打開線上版本或原始碼。</p>
           </header>
 
           <article class="feature">
-            <a
-              class="feature__media"
-              href="https://eliot5566.github.io/JEV-Paper-Radar/public/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="images/projects/paper-radar.jpg"
-                alt="Paper Radar 每日頁面：讀了 50 篇論文，挑出 12 篇候選、4 篇必讀"
-                loading="lazy"
-              />
+            <a class="feature__media" href="https://eliot5566.github.io/JEV-Paper-Radar/public/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="images/projects/paper-radar.jpg" width="1200" height="1493" alt="" loading="lazy" decoding="async" />
             </a>
             <div class="feature__body">
-              <p class="feature__kicker">2026 · 開源工具 · 28★</p>
+              <p class="feature__kicker"><span class="feature__num">01</span>2026 · 開源工具 · <span data-gh-stars="JEV-Paper-Radar">28</span>★</p>
               <h3>Paper Radar</h3>
-              <p class="feature__tagline">
-                每天早上讀完 arXiv 上所有新論文，只把你該讀的那幾篇挑出來。
-              </p>
+              <p class="feature__tagline">每天早上讀完 arXiv 上所有新論文，只把你該讀的那幾篇挑出來。</p>
+              <ul class="metrics">
+                <li><strong>33 秒</strong><span>判讀 501 篇論文</span></li>
+                <li><strong>$0.06</strong><span>每天讀完整個 arXiv</span></li>
+                <li><strong>96.9%</strong><span>系統性回顧召回率</span></li>
+              </ul>
               <ul class="bullets">
-                <li>
-                  用白話寫下研究興趣，模型對每篇論文、每個興趣回答一個是非題並給出校準過的機率，程式再依門檻決定必讀、可讀或略過。
-                </li>
-                <li>
-                  實測 501 篇論文 33 秒判讀完成，花費 $0.02；讀完整個 arXiv
-                  每天約 $0.06。
-                </li>
-                <li>
-                  在四份從未看過的 Cochrane 系統性回顧上篩選 19,447
-                  筆文獻，找回 96.9% 審查者納入的研究，同時減少 78% 的閱讀量。
-                </li>
-                <li>
-                  完全跑在 GitHub Actions + GitHub Pages，輸出網頁與 RSS，可推送到
-                  Slack、Discord、Telegram；fork 即可使用，不需伺服器。
-                </li>
+                <li>用白話寫下研究興趣，模型對每篇論文回答是非題並給出校準過的機率，程式再依門檻分成必讀、可讀或略過。</li>
+                <li>在四份未看過的 Cochrane 系統性回顧上篩選 19,447 筆文獻，找回 96.9% 審查者納入的研究，同時減少 78% 閱讀量。</li>
+                <li>完全跑在 GitHub Actions + Pages，輸出網頁與 RSS，可推送到 Slack、Discord、Telegram；fork 即用，不需伺服器。</li>
               </ul>
               <ul class="tags">
-                <li>Python</li><li>GitHub Actions</li><li>RSS</li><li>LLM 評估</li><li>校準</li>
+                <li>Python</li><li>GitHub Actions</li><li>RSS</li><li>LLM 評估</li><li>機率校準</li>
               </ul>
               <div class="links">
-                <a href="https://eliot5566.github.io/JEV-Paper-Radar/public/" target="_blank" rel="noopener">線上 Demo ↗</a>
-                <a href="https://github.com/Eliot5566/JEV-Paper-Radar" target="_blank" rel="noopener">原始碼 ↗</a>
+                <a class="btn btn--sm btn--primary" href="https://eliot5566.github.io/JEV-Paper-Radar/public/" target="_blank" rel="noopener">線上 Demo<svg class="i"><use href="#i-arrow" /></svg></a>
+                <a class="btn btn--sm" href="https://github.com/Eliot5566/JEV-Paper-Radar" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>原始碼</a>
               </div>
             </div>
           </article>
 
           <article class="feature feature--flip">
-            <a
-              class="feature__media"
-              href="https://eliot5566.github.io/jev-arena/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="images/projects/jev-arena.jpg"
-                alt="Jev Arena：兩個機器人即時對戰，旁邊顯示每個動作的機率"
-                loading="lazy"
-              />
+            <a class="feature__media" href="https://eliot5566.github.io/jev-arena/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="images/projects/jev-arena.jpg" width="1200" height="750" alt="" loading="lazy" decoding="async" />
             </a>
             <div class="feature__body">
-              <p class="feature__kicker">2026 · 開源遊戲 · npm 套件</p>
+              <p class="feature__kicker"><span class="feature__num">02</span>2026 · 開源遊戲 · npm 套件</p>
               <h3>Jev Arena</h3>
-              <p class="feature__tagline">
-                用一段英文寫出你的戰士，讓模型在即時對戰中替它做反應。
-              </p>
+              <p class="feature__tagline">用一段英文寫出你的戰士，讓模型在即時對戰中替它做反應。</p>
               <ul class="bullets">
-                <li>
-                  玩家用 YAML 寫策略與「反射動作」，模型每秒多次讀取戰場狀態，回傳帶機率的行動決策。
-                </li>
-                <li>
-                  天梯採 Elo 計分，透過 Pull Request 報名，GitHub Actions
-                  自動對戰並更新排名。
-                </li>
-                <li>
-                  「大腦」可抽換：Jev、其他模型或任何 LLM，用同一套規則比較快思與慢想。
-                </li>
+                <li>玩家用 YAML 寫策略與「反射動作」，模型每秒多次讀取戰場狀態，回傳帶機率的行動決策。</li>
+                <li>天梯採 Elo 計分，透過 Pull Request 報名，GitHub Actions 自動對戰並更新排名。</li>
+                <li>「大腦」可抽換：Jev、其他模型或任何 LLM，用同一套規則比較快思與慢想。</li>
               </ul>
               <ul class="tags">
                 <li>JavaScript</li><li>Canvas</li><li>npm</li><li>GitHub Actions</li><li>Elo 天梯</li>
               </ul>
               <div class="links">
-                <a href="https://eliot5566.github.io/jev-arena/" target="_blank" rel="noopener">觀看天梯 ↗</a>
-                <a href="https://github.com/Eliot5566/jev-arena" target="_blank" rel="noopener">原始碼 ↗</a>
+                <a class="btn btn--sm btn--primary" href="https://eliot5566.github.io/jev-arena/" target="_blank" rel="noopener">觀看天梯<svg class="i"><use href="#i-arrow" /></svg></a>
+                <a class="btn btn--sm" href="https://github.com/Eliot5566/jev-arena" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>原始碼</a>
               </div>
             </div>
           </article>
@@ -212,124 +412,87 @@
           <article class="feature">
             <div class="feature__media feature__media--mock" aria-hidden="true">
               <div class="mock">
-                <div class="mock__col">
-                  <b>顧客</b><span>掃碼入桌</span><span>菜單 / 購物車</span><span>我的訂單</span>
+                <div class="mock__screen mock__screen--phone">
+                  <b>顧客</b>
+                  <span class="mock__row"><i></i>掃碼入桌</span>
+                  <span class="mock__row"><i></i>菜單 / 購物車</span>
+                  <span class="mock__row"><i></i>我的訂單</span>
+                  <span class="mock__pill">送出訂單</span>
                 </div>
-                <div class="mock__col">
-                  <b>廚房</b><span>即時看板</span><span>出餐狀態</span>
+                <div class="mock__screen">
+                  <b>廚房看板</b>
+                  <span class="mock__ticket">#A12 · 2 項<em>製作中</em></span>
+                  <span class="mock__ticket">#A13 · 4 項<em>待出餐</em></span>
+                  <span class="mock__ticket">#A14 · 1 項<em>新訂單</em></span>
                 </div>
-                <div class="mock__col">
-                  <b>管理後台</b><span>RBAC 權限</span><span>報表統計</span>
+                <div class="mock__screen">
+                  <b>管理後台</b>
+                  <span class="mock__bars"><i style="height: 40%"></i><i style="height: 70%"></i><i style="height: 55%"></i><i style="height: 90%"></i><i style="height: 65%"></i></span>
+                  <span class="mock__row"><i></i>RBAC 權限</span>
                 </div>
               </div>
             </div>
             <div class="feature__body">
-              <p class="feature__kicker">2026 · 全端 MVP</p>
+              <p class="feature__kicker"><span class="feature__num">03</span>2026 · 全端 MVP</p>
               <h3>手機點餐系統</h3>
-              <p class="feature__tagline">
-                從掃碼點餐、廚房出餐到後台報表，一套給餐廳用的完整流程。
-              </p>
+              <p class="feature__tagline">從掃碼點餐、廚房出餐到後台報表，一套給餐廳用的完整流程。</p>
               <ul class="bullets">
-                <li>
-                  三種角色各有介面：顧客掃碼入桌點餐並追蹤訂單狀態、廚房現場看板、管理者後台。
-                </li>
-                <li>
-                  後台以 RBAC 控管權限，內建營運 Dashboard 與報表。
-                </li>
-                <li>
-                  Next.js + Prisma + PostgreSQL，Docker Compose 一鍵起資料庫，Vitest 撰寫測試。
-                </li>
+                <li>三種角色各有介面：顧客掃碼入桌點餐並追蹤訂單、廚房現場看板、管理者後台。</li>
+                <li>後台以 RBAC 控管權限，內建營運 Dashboard 與報表。</li>
+                <li>Next.js + Prisma + PostgreSQL，Docker Compose 一鍵起資料庫，Vitest 撰寫測試。</li>
               </ul>
               <ul class="tags">
                 <li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Docker</li><li>Tailwind</li>
               </ul>
               <div class="links">
-                <a href="https://github.com/Eliot5566/orderSystem" target="_blank" rel="noopener">原始碼 ↗</a>
+                <a class="btn btn--sm" href="https://github.com/Eliot5566/orderSystem" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>原始碼</a>
               </div>
             </div>
           </article>
 
           <article class="feature feature--flip">
-            <a
-              class="feature__media"
-              href="https://github.com/Eliot5566/Parking-Helper"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="images/projects/parking-helper.jpg"
-                alt="停車神隊友：停車標誌與停在車格裡的汽車插畫"
-                loading="lazy"
-              />
+            <a class="feature__media" href="https://github.com/Eliot5566/Parking-Helper" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="images/projects/parking-helper.jpg" width="1200" height="800" alt="" loading="lazy" decoding="async" />
             </a>
             <div class="feature__body">
-              <p class="feature__kicker">2025 · LINE Bot</p>
+              <p class="feature__kicker"><span class="feature__num">04</span>2025 · LINE Bot</p>
               <h3>停車神隊友</h3>
-              <p class="feature__tagline">
-                在 LINE 傳出你的位置，馬上知道附近哪裡還有車位。
-              </p>
+              <p class="feature__tagline">在 LINE 傳出你的位置，馬上知道附近哪裡還有車位。</p>
               <ul class="bullets">
-                <li>
-                  分享定位或直接輸入地址，就能查詢方圓 2.5 公里內的停車場或路邊停車格，依距離排出最近的 5 個。
-                </li>
-                <li>
-                  串接交通部 TDX 取得即時剩餘車位與收費資訊；資料不足時改用地方政府開放資料補上。
-                </li>
-                <li>
-                  用 Google Geocoding 解析地址，用 Distance Matrix 算出實際開車距離與時間。
-                </li>
-                <li>
-                  結果以 LINE Flex Message 卡片呈現，點一下就開啟 Google 地圖導航；另外提供 LIFF 頁面，並加上流量限制保護 API 額度。
-                </li>
+                <li>分享定位或輸入地址，即可查詢 2.5 公里內的停車場或路邊停車格，依距離列出最近的 5 個。</li>
+                <li>串接交通部 TDX 取得即時剩餘車位與收費資訊，資料不足時改用地方政府開放資料補上。</li>
+                <li>以 Google Geocoding 解析地址、Distance Matrix 計算開車距離與時間；結果用 Flex Message 卡片呈現，一鍵開啟導航。</li>
               </ul>
               <ul class="tags">
                 <li>Node.js</li><li>Express</li><li>LINE Messaging API</li><li>LIFF</li><li>TDX API</li><li>Google Maps API</li>
               </ul>
               <div class="links">
-                <a href="https://github.com/Eliot5566/Parking-Helper" target="_blank" rel="noopener">原始碼 ↗</a>
+                <a class="btn btn--sm" href="https://github.com/Eliot5566/Parking-Helper" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>原始碼</a>
               </div>
             </div>
           </article>
 
           <article class="feature">
-            <a
-              class="feature__media"
-              href="https://github.com/Eliot5566/E-Commerce-Website"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="images/projects/shiyueguo.jpg"
-                alt="拾月菓首頁：富士山與櫻花插畫"
-                loading="lazy"
-              />
+            <a class="feature__media" href="https://last-frontendfinal.onrender.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="images/projects/shiyueguo.jpg" width="1200" height="674" alt="" loading="lazy" decoding="async" />
             </a>
             <div class="feature__body">
-              <p class="feature__kicker">2023 · 結訓專題</p>
+              <p class="feature__kicker"><span class="feature__num">05</span>2023 · 結訓專題</p>
               <h3>拾月菓｜日式和菓子電商</h3>
-              <p class="feature__tagline">
-                一個從前端、後端到資料庫都自己打造的完整電商網站。
-              </p>
+              <p class="feature__tagline">從前端、後端到資料庫都自己打造的完整電商網站。</p>
               <ul class="bullets">
-                <li>
-                  商品瀏覽、購物車、客製化禮盒（選尺寸、挑商品、選卡片）、歷史訂單與會員功能。
-                </li>
-                <li>
-                  bcrypt 加密密碼、JWT 驗證身分；串接 PayPal API 完成金流。
-                </li>
-                <li>
-                  React 前端 + Node.js / Express 後端，資料庫使用 Google Cloud
-                  SQL（MySQL），前後端分別部署在 Render。
-                </li>
+                <li>商品瀏覽、購物車、客製化禮盒（選尺寸、挑商品、選卡片）、歷史訂單與會員功能。</li>
+                <li>bcrypt 加密密碼、JWT 驗證身分，串接 PayPal API 完成金流。</li>
+                <li>React + Node.js / Express，資料庫使用 Google Cloud SQL（MySQL），前後端分別部署在 Render。</li>
               </ul>
               <ul class="tags">
                 <li>React</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>PayPal API</li><li>JWT</li>
               </ul>
               <div class="links">
-                <a href="https://last-frontendfinal.onrender.com/" target="_blank" rel="noopener">線上網站 ↗</a>
-                <a href="https://github.com/Eliot5566/E-Commerce-Website" target="_blank" rel="noopener">原始碼 ↗</a>
+                <a class="btn btn--sm btn--primary" href="https://last-frontendfinal.onrender.com/" target="_blank" rel="noopener">線上網站<svg class="i"><use href="#i-arrow" /></svg></a>
+                <a class="btn btn--sm" href="https://github.com/Eliot5566/E-Commerce-Website" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>原始碼</a>
               </div>
-              <p class="note">線上網站首次開啟需等待約 45 秒連線雲端資料庫。</p>
+              <p class="note">線上網站首次開啟約需 45 秒喚醒伺服器並連線資料庫。</p>
             </div>
           </article>
         </div>
@@ -338,226 +501,239 @@
       <!-- More projects -->
       <section class="section section--alt" id="more">
         <div class="container">
-          <header class="section__head">
-            <p class="eyebrow">More Projects</p>
-            <h2>更多專案</h2>
-            <p>小而完整的工具、API 與介面練習。</p>
+          <header class="section__head section__head--row">
+            <div>
+              <p class="eyebrow"><span>04</span>更多作品</p>
+              <h2>小而完整的專案</h2>
+            </div>
+            <div class="project-tools">
+            <label class="search">
+              <svg class="i"><use href="#i-search" /></svg>
+              <input type="search" data-project-search placeholder="搜尋專案或技術…" aria-label="搜尋專案或技術" />
+            </label>
+            <div class="filters" role="group" aria-label="篩選專案">
+              <button type="button" class="chip" data-filter="all" aria-pressed="true">全部</button>
+              <button type="button" class="chip" data-filter="fullstack" aria-pressed="false">全端</button>
+              <button type="button" class="chip" data-filter="backend" aria-pressed="false">後端與資料</button>
+              <button type="button" class="chip" data-filter="frontend" aria-pressed="false">前端</button>
+            </div>
+            </div>
           </header>
 
-          <div class="grid">
-            <a class="card" href="https://github.com/Eliot5566/US-stock-monitoring-and-query-system" target="_blank" rel="noopener">
+          <p class="grid-status" data-grid-status aria-live="polite"></p>
+
+          <div class="grid" id="project-grid">
+            <a class="card" data-cat="backend" href="https://github.com/Eliot5566/US-stock-monitoring-and-query-system" target="_blank" rel="noopener">
+              <span class="card__cover card__cover--code" aria-hidden="true"><code>RSI14 · ATR · MA20</code></span>
               <p class="card__meta">Python · Flask</p>
               <h3>美股監控查詢系統</h3>
-              <p>即時查詢 1 分鐘盤前、盤後與收盤價，計算 RSI14、ATR、MA5/20/60，依台北時區自動切換時段，Pickle 快取減少 API 呼叫。</p>
+              <p>即時查詢盤前、盤後與收盤價，計算 RSI14、ATR、MA5/20/60，依台北時區自動切換時段，並以快取減少 API 呼叫。</p>
             </a>
-            <a class="card" href="https://github.com/Eliot5566/algorithm" target="_blank" rel="noopener">
+            <a class="card" data-cat="backend" href="https://github.com/Eliot5566/algorithm" target="_blank" rel="noopener">
+              <span class="card__cover card__cover--code" aria-hidden="true"><code>POST /faqs/match</code></span>
               <p class="card__meta">TypeScript · Express · Zod</p>
               <h3>FAQ 管理 API</h3>
-              <p>FAQ 的 CRUD API，加上依提問內容做相似度比對找出最佳答案，含角色權限、Swagger 文件與單元測試。</p>
+              <p>FAQ 的 CRUD API，依提問內容做相似度比對找出最佳答案，含角色權限、Swagger 文件與單元測試。</p>
             </a>
-            <a class="card" href="https://github.com/Eliot5566/pokemon" target="_blank" rel="noopener">
+            <a class="card" data-cat="fullstack" href="https://github.com/Eliot5566/pokemon" target="_blank" rel="noopener">
+              <span class="card__cover card__cover--code" aria-hidden="true"><code>sales · stock · materials</code></span>
               <p class="card__meta">React · Express · SQLite</p>
-              <h3>3D 列印球銷售紀錄系統</h3>
-              <p>管理耗材、產品、銷售紀錄與庫存的小型內部系統。</p>
+              <h3>3D 列印銷售紀錄系統</h3>
+              <p>管理耗材、產品、銷售紀錄與庫存的小型內部系統，前後端分離。</p>
             </a>
-            <a class="card" href="https://github.com/Eliot5566/TaiwanHoliday" target="_blank" rel="noopener">
+            <a class="card" data-cat="backend" href="https://github.com/Eliot5566/TaiwanHoliday" target="_blank" rel="noopener">
+              <span class="card__cover card__cover--code" aria-hidden="true"><code>GET /api/holidays/2024</code></span>
               <p class="card__meta">API · 政府開放資料</p>
               <h3>台灣國定假日 API</h3>
-              <p>依日期或年份查詢台灣假日，以 JSON 回傳，資料來自政府開放資料平台。</p>
+              <p>依日期或年份查詢台灣假日並以 JSON 回傳，資料來自政府資料開放平台。</p>
             </a>
-            <a class="card" href="https://github.com/Eliot5566/Flask-Python-React-Contacts" target="_blank" rel="noopener">
+            <a class="card" data-cat="fullstack" href="https://github.com/Eliot5566/Flask-Python-React-Contacts" target="_blank" rel="noopener">
+              <span class="card__cover card__cover--code" aria-hidden="true"><code>Flask ⇄ React</code></span>
               <p class="card__meta">Python · Flask · React</p>
               <h3>聯絡人管理</h3>
-              <p>Flask REST API 搭配 React 前端的聯絡人新增、編輯、刪除應用，練習前後端分離架構。</p>
+              <p>Flask REST API 搭配 React 前端的聯絡人新增、編輯與刪除，練習前後端分離架構。</p>
             </a>
-            <a class="card" href="https://github.com/Eliot5566/Laravel-Todolist" target="_blank" rel="noopener">
+            <a class="card" data-cat="fullstack" href="https://github.com/Eliot5566/Laravel-Todolist" target="_blank" rel="noopener">
+              <span class="card__cover card__cover--code" aria-hidden="true"><code>php artisan migrate</code></span>
               <p class="card__meta">PHP · Laravel</p>
               <h3>Laravel Todolist</h3>
-              <p>用 Laravel 實作的待辦事項應用，練習路由、Eloquent 與資料庫遷移。</p>
+              <p>用 Laravel 實作的待辦事項應用，練習路由、Eloquent ORM 與資料庫遷移。</p>
             </a>
-            <a class="card card--img" href="https://eliot5566.github.io/sideProjectZest/" target="_blank" rel="noopener">
-              <img src="images/projects/zest.jpg" alt="" loading="lazy" />
+            <a class="card" data-cat="frontend" href="https://eliot5566.github.io/sideProjectZest/" target="_blank" rel="noopener">
+              <span class="card__cover"><img src="images/projects/zest.jpg" width="1200" height="598" alt="" loading="lazy" decoding="async" /></span>
               <p class="card__meta">HTML · CSS · RWD</p>
               <h3>Zest Wear 服飾品牌</h3>
-              <p>參考知名服飾品牌打造的靜態形象網站，注重字體、配色與互動細節。</p>
+              <p>參考知名服飾品牌打造的靜態形象網站，著重字體、配色與互動細節。</p>
             </a>
-            <a class="card card--img" href="https://eliot5566.github.io/netflix-Spirited-Away/" target="_blank" rel="noopener">
-              <img src="images/projects/netflix.jpg" alt="" loading="lazy" />
+            <a class="card" data-cat="frontend" href="https://eliot5566.github.io/netflix-Spirited-Away/" target="_blank" rel="noopener">
+              <span class="card__cover"><img src="images/projects/netflix.jpg" width="1200" height="586" alt="" loading="lazy" decoding="async" /></span>
               <p class="card__meta">HTML · Bootstrap</p>
               <h3>Netflix 神隱少女</h3>
               <p>重新設計的神隱少女介紹頁，RWD 響應式版面。</p>
             </a>
-            <a class="card card--img" href="https://eliot5566.github.io/colorTime/" target="_blank" rel="noopener">
-              <img src="images/projects/colortime.jpg" alt="" loading="lazy" />
+            <a class="card" data-cat="frontend" href="https://eliot5566.github.io/colorTime/" target="_blank" rel="noopener">
+              <span class="card__cover"><img src="images/projects/colortime.jpg" width="1200" height="590" alt="" loading="lazy" decoding="async" /></span>
               <p class="card__meta">JavaScript · jQuery</p>
               <h3>當下的顏色</h3>
-              <p>背景顏色隨一天中的時間流動變化，也可以切換時區。</p>
+              <p>背景顏色隨一天中的時間流動變化，也能切換時區。</p>
             </a>
           </div>
 
-          <p class="more-link">
-            <a href="https://github.com/Eliot5566?tab=repositories" target="_blank" rel="noopener">在 GitHub 看全部專案 ↗</a>
-          </p>
-        </div>
-      </section>
+<p class="grid-empty" data-grid-empty hidden></p>
 
-      <!-- Experience -->
-      <section class="section" id="experience">
-        <div class="container">
-          <header class="section__head">
-            <p class="eyebrow">Experience</p>
-            <h2>經歷</h2>
-            <p>先在醫療與製造業累積流程協調經驗，2023 年轉職工程師，現在專注於企業系統與流程數位化。</p>
-          </header>
-
-          <ol class="timeline">
-            <li class="timeline__current">
-              <div class="timeline__when">2023.11 – 至今</div>
-              <div class="timeline__what">
-                <h3>全端工程師</h3>
-                <p class="timeline__org">金全益股份有限公司</p>
-                <p class="timeline__focus">企業內部資訊系統｜ERP / WMS 整合｜流程數位化</p>
-                <ul>
-                  <li>負責企業內部 Web 系統從需求分析、資料庫設計到前後端開發與正式環境排錯的完整流程。</li>
-                  <li>以 Next.js / React 開發多層簽核系統，包含權限控管、代理簽核、SLA、Email 通知、PDF 匯出與歷程追蹤。</li>
-                  <li>將品質異常處理、樣品開發、採購與工單等人工或 Excel 流程，轉成可追蹤的 Web 系統。</li>
-                  <li>串接鼎新 TIPTOP ERP（Oracle），以 SQL Server OPENQUERY 與 CTE 建置採購交期、供應商達交率、設備產能等管理報表。</li>
-                  <li>參與鼎新智能物流 WMS 整合，跨 Oracle、SQL Server、MySQL 比對資料，並從 API、Log 到資料庫逐層定位同步異常。</li>
-                </ul>
-                <ul class="tags">
-                  <li>Next.js</li><li>React</li><li>ASP.NET Web Forms</li><li>VB.NET</li><li>SQL Server</li><li>Oracle</li><li>MySQL</li><li>REST API</li><li>TIPTOP ERP</li><li>WMS</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__when">2023.05 – 2023.10</div>
-              <div class="timeline__what">
-                <h3>前端工程師就業養成班</h3>
-                <p class="timeline__org">資展國際股份有限公司</p>
-                <ul>
-                  <li>獨立設計並實作全端電商網站「拾月菓」（React、Node.js、MySQL）。</li>
-                  <li>帶領團隊完成全端專案，學會把創意轉成可上線的應用。</li>
-                  <li>透過實作與團隊專案強化前端、後端與協作能力。</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__when">2021.04 – 2023.05</div>
-              <div class="timeline__what">
-                <h3>助理</h3>
-                <p class="timeline__org">立育實業有限公司</p>
-                <ul>
-                  <li>協調印刷專案所需的原料、設備與人力，與供應商及團隊合作確保資源準時到位。</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__when">2019.04 – 2020.01</div>
-              <div class="timeline__what">
-                <h3>醫檢助理</h3>
-                <p class="timeline__org">彰化基督教醫院</p>
-                <ul>
-                  <li>管理院內外研究計畫與委外檢驗專案，籌辦各類會議並撰寫會議紀錄。</li>
-                </ul>
-              </div>
-            </li>
-            <li class="timeline__edu">
-              <div class="timeline__when">2014 – 2018</div>
-              <div class="timeline__what">
-                <h3>醫務管理系 學士</h3>
-                <p class="timeline__org">弘光科技大學</p>
-              </div>
-            </li>
-          </ol>
+          <div class="activity">
+            <div class="activity__head">
+              <h3><svg class="i"><use href="#i-github" /></svg>GitHub 最近更新</h3>
+              <span class="live"><span class="status__dot"></span><span data-gh-status>即時同步</span></span>
+            </div>
+            <ul class="activity__list" id="gh-activity">
+              <li><a class="activity__row" href="https://github.com/Eliot5566/JEV-Paper-Radar" target="_blank" rel="noopener"><span class="activity__name" style="--c: #3572A5">JEV-Paper-Radar</span><span class="activity__desc">每天讀完 arXiv 新論文，只挑出值得讀的幾篇</span><span class="activity__meta"><span>Python</span><span><svg class="i"><use href="#i-star" /></svg>28</span><span data-pushed="2026-10-05T07:57:53Z">2026-10-05</span></span></a></li>
+              <li><a class="activity__row" href="https://github.com/Eliot5566/jev-arena" target="_blank" rel="noopener"><span class="activity__name" style="--c: #f1e05a">jev-arena</span><span class="activity__desc">用白話寫戰士，讓模型即時對戰</span><span class="activity__meta"><span>JavaScript</span><span><svg class="i"><use href="#i-star" /></svg>1</span><span data-pushed="2026-09-25T14:22:28Z">2026-09-25</span></span></a></li>
+              <li><a class="activity__row" href="https://github.com/Eliot5566/orderSystem" target="_blank" rel="noopener"><span class="activity__name" style="--c: #3178c6">orderSystem</span><span class="activity__desc">手機點餐系統：顧客、廚房、後台三種介面</span><span class="activity__meta"><span>TypeScript</span><span data-pushed="2026-04-14T09:02:15Z">2026-04-14</span></span></a></li>
+              <li><a class="activity__row" href="https://github.com/Eliot5566/algorithm" target="_blank" rel="noopener"><span class="activity__name" style="--c: #3178c6">algorithm</span><span class="activity__desc">FAQ 管理 API，依提問做相似度比對</span><span class="activity__meta"><span>TypeScript</span><span data-pushed="2025-10-07T08:07:37Z">2025-10-07</span></span></a></li>
+              <li><a class="activity__row" href="https://github.com/Eliot5566/Parking-Helper" target="_blank" rel="noopener"><span class="activity__name" style="--c: #f1e05a">Parking-Helper</span><span class="activity__desc">LINE 停車神隊友，即時查附近車位</span><span class="activity__meta"><span>JavaScript</span><span data-pushed="2025-09-03T07:29:40Z">2025-09-03</span></span></a></li>
+            </ul>
+            <div class="activity__foot">
+              <a href="https://github.com/Eliot5566?tab=repositories" target="_blank" rel="noopener">在 GitHub 看全部專案<svg class="i"><use href="#i-arrow" /></svg></a>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Skills -->
-      <section class="section section--alt" id="skills">
+      <section class="section" id="skills">
         <div class="container">
-          <header class="section__head">
-            <p class="eyebrow">Skills</p>
-            <h2>技能</h2>
+          <header class="section__head section__head--row">
+            <div>
+              <p class="eyebrow"><span>05</span>技能</p>
+              <h2>技術能力</h2>
+            </div>
+            <p class="legend"><span class="tag tag--core">主力</span><span class="tag">熟悉</span></p>
           </header>
           <div class="skills">
             <div class="skill">
-              <h3>語言</h3>
-              <ul class="tags"><li>TypeScript</li><li>JavaScript (ES6+)</li><li>Python</li><li>VB.NET</li><li>SQL / Oracle SQL</li><li>PHP</li><li>HTML5 / CSS3 / Sass</li></ul>
+              <h3>程式語言</h3>
+              <ul class="tags"><li class="core">TypeScript</li><li class="core">JavaScript</li><li class="core">Python</li><li class="core">SQL</li><li class="core">VB.NET</li><li>PHP</li><li>HTML / CSS / Sass</li></ul>
             </div>
             <div class="skill">
               <h3>前端</h3>
-              <ul class="tags"><li>React</li><li>Next.js</li><li>Redux</li><li>Tailwind CSS</li><li>Bootstrap 5</li><li>GSAP</li><li>RWD</li></ul>
+              <ul class="tags"><li class="core">React</li><li class="core">Next.js</li><li>Tailwind CSS</li><li>Redux</li><li>Bootstrap</li><li>GSAP</li><li>RWD</li></ul>
             </div>
             <div class="skill">
-              <h3>後端與資料</h3>
-              <ul class="tags"><li>Node.js</li><li>Express</li><li>ASP.NET Web Forms</li><li>Flask</li><li>Laravel</li><li>Prisma</li><li>SQL Server</li><li>Oracle</li><li>PostgreSQL</li><li>MySQL</li><li>SQLite</li><li>GraphQL</li><li>RESTful API</li></ul>
+              <h3>後端</h3>
+              <ul class="tags"><li class="core">Node.js</li><li class="core">Express</li><li class="core">ASP.NET Web Forms</li><li class="core">REST API</li><li>Flask</li><li>Laravel</li><li>GraphQL</li></ul>
             </div>
             <div class="skill">
-              <h3>工具與部署</h3>
-              <ul class="tags"><li>Git / GitHub</li><li>GitHub Actions</li><li>GitHub Pages</li><li>Docker</li><li>Render</li><li>Google Cloud SQL</li><li>Vitest</li><li>LINE LIFF</li><li>PayPal API</li></ul>
+              <h3>資料庫</h3>
+              <ul class="tags"><li class="core">SQL Server</li><li class="core">Oracle</li><li class="core">MySQL</li><li>PostgreSQL</li><li>Prisma</li><li>SQLite</li></ul>
+            </div>
+            <div class="skill">
+              <h3>企業系統</h3>
+              <ul class="tags"><li class="core">鼎新 TIPTOP ERP</li><li class="core">鼎新智能物流 WMS</li><li class="core">簽核流程設計</li><li>JDBC / 連線池</li><li>跨庫資料比對</li></ul>
+            </div>
+            <div class="skill">
+              <h3>API 與整合</h3>
+              <ul class="tags"><li>LINE Messaging API</li><li>LIFF</li><li>Google Maps API</li><li>TDX API</li><li>PayPal API</li></ul>
             </div>
             <div class="skill">
               <h3>AI 應用</h3>
-              <ul class="tags"><li>LLM 分類與判讀</li><li>機率校準</li><li>成本與準確率評估</li><li>提示設計</li></ul>
+              <ul class="tags"><li>LLM 判讀與分類</li><li>機率校準</li><li>成本與準確率評估</li></ul>
             </div>
             <div class="skill">
-              <h3>語言能力</h3>
-              <ul class="tags"><li>中文（母語）</li><li>英文 CEFR B1（CSEPT）</li></ul>
+              <h3>工具與部署</h3>
+              <ul class="tags"><li class="core">Git / GitHub</li><li class="core">GitHub Actions</li><li>Docker</li><li>Vitest</li><li>Render</li><li>Google Cloud SQL</li></ul>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Certificates -->
-      <section class="section" id="certificates">
+      <section class="section section--alt" id="certificates">
         <div class="container">
           <header class="section__head">
-            <p class="eyebrow">Certificates</p>
-            <h2>相關證書</h2>
-            <p>Coursera 課程證書，點擊可查看驗證頁面。</p>
+            <p class="eyebrow"><span>06</span>證書</p>
+            <h2>進修與證書</h2>
+            <p>轉職期間完成的 Coursera 課程，點擊可查看驗證頁面；英文能力 CSEPT 第一級（CEFR B1）。</p>
           </header>
-          <ul class="certs">
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/DBYPMS3WUPTA" target="_blank" rel="noopener"><b>Advanced React</b><span>Meta</span></a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/NS2FEJQE8GJ4" target="_blank" rel="noopener"><b>React Basics</b><span>Meta</span></a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/QUMW7KVJ3BG2" target="_blank" rel="noopener"><b>Programming with JavaScript</b><span>Meta</span></a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/PB7FEXDVK77W" target="_blank" rel="noopener"><b>Introduction to Front-End Development</b><span>Meta</span></a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/2MRJZ3342VAK" target="_blank" rel="noopener"><b>Interactivity with JavaScript</b><span>University of Michigan</span></a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/283U8ASDQ6YZ" target="_blank" rel="noopener"><b>Introduction to HTML5</b><span>University of Michigan</span></a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/NF8UXU8TTNED" target="_blank" rel="noopener"><b>Introduction to CSS3</b><span>University of Michigan</span></a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/8FMHRJ54KAU2" target="_blank" rel="noopener"><b>HTML, CSS, and JavaScript for Web Developers</b><span>Johns Hopkins University</span></a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/JZUR8L9HBFGE" target="_blank" rel="noopener"><b>Python Data Structures</b><span>University of Michigan</span></a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/YMMEAGXYWPSQ" target="_blank" rel="noopener"><b>Introduction to Data Science in Python</b><span>University of Michigan</span></a></li>
-            <!-- 原網站此證書連結與 Interactivity with JavaScript 相同，待確認正確網址 -->
-            <li><span class="certs__nolink"><b>Introduction to Big Data</b><span>UC San Diego</span></span></li>
+          <ul class="certs" id="cert-list">
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/DBYPMS3WUPTA" target="_blank" rel="noopener"><span class="certs__issuer">Meta</span><b>Advanced React</b></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/NS2FEJQE8GJ4" target="_blank" rel="noopener"><span class="certs__issuer">Meta</span><b>React Basics</b></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/QUMW7KVJ3BG2" target="_blank" rel="noopener"><span class="certs__issuer">Meta</span><b>Programming with JavaScript</b></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/PB7FEXDVK77W" target="_blank" rel="noopener"><span class="certs__issuer">Meta</span><b>Introduction to Front-End Development</b></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/8FMHRJ54KAU2" target="_blank" rel="noopener"><span class="certs__issuer">Johns Hopkins University</span><b>HTML, CSS, and JavaScript for Web Developers</b></a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/YMMEAGXYWPSQ" target="_blank" rel="noopener"><span class="certs__issuer">University of Michigan</span><b>Introduction to Data Science in Python</b></a></li>
+            <li class="is-extra"><a href="https://www.coursera.org/account/accomplishments/certificate/JZUR8L9HBFGE" target="_blank" rel="noopener"><span class="certs__issuer">University of Michigan</span><b>Python Data Structures</b></a></li>
+            <li class="is-extra"><a href="https://www.coursera.org/account/accomplishments/certificate/2MRJZ3342VAK" target="_blank" rel="noopener"><span class="certs__issuer">University of Michigan</span><b>Interactivity with JavaScript</b></a></li>
+            <li class="is-extra"><a href="https://www.coursera.org/account/accomplishments/certificate/283U8ASDQ6YZ" target="_blank" rel="noopener"><span class="certs__issuer">University of Michigan</span><b>Introduction to HTML5</b></a></li>
+            <li class="is-extra"><a href="https://www.coursera.org/account/accomplishments/certificate/NF8UXU8TTNED" target="_blank" rel="noopener"><span class="certs__issuer">University of Michigan</span><b>Introduction to CSS3</b></a></li>
+            <li class="is-extra"><span class="certs__nolink"><span class="certs__issuer">UC San Diego</span><b>Introduction to Big Data</b></span></li>
           </ul>
+          <p class="more-link">
+            <button class="btn" type="button" data-cert-toggle aria-expanded="false" aria-controls="cert-list" data-more="顯示全部 11 張證書" data-less="收合">顯示全部 11 張證書</button>
+          </p>
         </div>
       </section>
 
       <!-- Contact -->
       <section class="section contact" id="contact">
         <div class="container contact__inner">
-          <p class="eyebrow">Contact</p>
-          <h2>一起做點什麼吧</h2>
+          <p class="eyebrow"><span>07</span>聯絡</p>
+          <h2>有流程想變簡單嗎？</h2>
           <p class="lead">
-            歡迎聊聊企業系統、流程數位化、開源工具或 AI 應用，也歡迎合作邀約。
+            不論是企業系統、ERP / WMS 整合、流程數位化，或是想聊聊工具與 AI 應用，都歡迎來信。
           </p>
-          <a class="btn btn--primary btn--lg" href="mailto:a7868783@gmail.com">a7868783@gmail.com</a>
-          <ul class="socials">
-            <li><a href="https://github.com/Eliot5566" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/eliot-su-6a834227b/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://www.cakeresume.com/siang-yu-su" target="_blank" rel="noopener">CakeResume</a></li>
-            <li><a href="https://www.instagram.com/a7868781/" target="_blank" rel="noopener">Instagram</a></li>
+          <div class="contact__grid">
+            <form class="compose" data-compose novalidate>
+              <p class="compose__title">直接寫信給我</p>
+              <fieldset class="compose__topics">
+                <legend>來信主題</legend>
+                <label><input type="radio" name="topic" value="工作機會" checked /><span>工作機會</span></label>
+                <label><input type="radio" name="topic" value="合作專案" /><span>合作專案</span></label>
+                <label><input type="radio" name="topic" value="技術交流" /><span>技術交流</span></label>
+                <label><input type="radio" name="topic" value="其他" /><span>其他</span></label>
+              </fieldset>
+              <label class="field"><span>你的名字</span><input type="text" name="name" autocomplete="name" placeholder="例如：王小明" /></label>
+              <label class="field"><span>想聊什麼</span><textarea name="message" rows="4" placeholder="簡單說說你的需求或想法…"></textarea></label>
+              <div class="compose__foot">
+                <p class="compose__hint" aria-live="polite">按下後會開啟你的郵件程式，內容已經幫你填好。</p>
+                <button class="btn btn--accent" type="submit"><svg class="i"><use href="#i-send" /></svg>用 Email 寄出</button>
+              </div>
+            </form>
+            <div class="contact__side">
+          <ul class="contact__links">
+            <li><a href="https://www.linkedin.com/in/eliot-su-6a834227b/" target="_blank" rel="noopener"><svg class="i"><use href="#i-linkedin" /></svg><span><b>LinkedIn</b>Eliot Su</span></a></li>
+            <li><a href="https://github.com/Eliot5566" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg><span><b>GitHub</b>Eliot5566</span></a></li>
+            <li><a href="https://www.cakeresume.com/siang-yu-su" target="_blank" rel="noopener"><svg class="i"><use href="#i-file" /></svg><span><b>CakeResume</b>線上履歷</span></a></li>
+            <li><a href="mailto:a7868783@gmail.com"><svg class="i"><use href="#i-mail" /></svg><span><b>Email</b>a7868783@gmail.com</span></a></li>
           </ul>
+              <button class="btn btn--lg btn--dark" type="button" data-copy="a7868783@gmail.com"><svg class="i"><use href="#i-copy" /></svg><span>複製 Email</span></button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footer__inner">
-        <span>© <span id="year">2026</span> 蘇祥育 Eliot Su</span>
-        <a href="#top">回到頁首 ↑</a>
+        <div>
+          <p class="footer__name">蘇祥育 Eliot Su</p>
+          <p>© <span data-year>2026</span> · 手寫 HTML / CSS / JS，部署於 GitHub Pages</p>
+          <p class="footer__hint">按 <kbd data-shortcut-hint>Ctrl K</kbd> 開啟快速選單</p>
+        </div>
+        <ul class="footer__icons">
+          <li><a href="https://github.com/Eliot5566" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github" /></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/eliot-su-6a834227b/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin" /></svg></a></li>
+          <li><a href="https://www.instagram.com/a7868781/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i"><use href="#i-instagram" /></svg></a></li>
+          <li><a href="mailto:a7868783@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail" /></svg></a></li>
+        </ul>
       </div>
     </footer>
+
+    <a class="to-top" href="#top" aria-label="回到頁首">
+      <svg class="ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" /></svg>
+      <svg class="i"><use href="#i-arrow-up" /></svg>
+    </a>
+    <div class="toast" role="status" aria-live="polite" data-copied="已複製 Email"></div>
 
     <script src="assets/js/site.js"></script>
   </body>

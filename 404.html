@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>找不到頁面｜蘇祥育 Eliot Su</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/Su-Xiangyu-Portfolio/images/favicon.svg" type="image/svg+xml" />
+    <script>
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Su-Xiangyu-Portfolio/assets/css/site.css" />
+    <style>
+      .notfound {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 48px 16px;
+      }
+      .notfound__code {
+        font-family: var(--mono);
+        font-size: clamp(72px, 16vw, 140px);
+        line-height: 1;
+        color: var(--accent);
+        letter-spacing: -0.04em;
+      }
+      .notfound h1 {
+        font-size: clamp(24px, 4vw, 34px);
+        font-weight: 900;
+        margin: 20px 0 10px;
+      }
+      .notfound p {
+        color: var(--muted);
+        margin-bottom: 32px;
+      }
+      .notfound .hero__actions {
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="notfound">
+      <div>
+        <p class="notfound__code">404</p>
+        <h1>找不到這個頁面 · Page not found</h1>
+        <p>網址可能打錯了，或頁面已經搬家。The link may be broken or the page has moved.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="/Su-Xiangyu-Portfolio/">回到首頁</a>
+          <a class="btn btn--lg" href="/Su-Xiangyu-Portfolio/en/">English home</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

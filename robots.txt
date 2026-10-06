@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eliot5566.github.io/Su-Xiangyu-Portfolio/sitemap.xml

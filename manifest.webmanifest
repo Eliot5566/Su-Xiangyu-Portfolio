@@ -1,0 +1,16 @@
+{
+  "name": "蘇祥育 Eliot Su｜全端工程師",
+  "short_name": "Eliot Su",
+  "description": "Eliot Su（蘇祥育）的作品集：ERP / WMS 整合、企業流程數位化與開源工具。",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0f13",
+  "theme_color": "#0c0f13",
+  "icons": [
+    { "src": "images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "images/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
