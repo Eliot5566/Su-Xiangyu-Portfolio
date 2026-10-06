@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parking Helper | Case study | Eliot Su</title>
+    <meta name="description" content="Parking data scattered across government open data and map services, turned into a single-step answer inside LINE." />
+    <meta name="author" content="Eliot Su" />
+    <link rel="canonical" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/en/work/parking-helper.html" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/work/parking-helper.html" />
+    <link rel="alternate" hreflang="en" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/en/work/parking-helper.html" />
+    <link rel="alternate" hreflang="x-default" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/work/parking-helper.html" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Eliot Su" />
+    <meta property="og:title" content="Parking Helper | Case study | Eliot Su" />
+    <meta property="og:description" content="Parking data scattered across government open data and map services, turned into a single-step answer inside LINE." />
+    <meta property="og:url" content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/en/work/parking-helper.html" />
+    <meta property="og:image" content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/images/og/parking-helper-en.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d1014" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="../../images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png" />
+    <link rel="manifest" href="../../manifest.webmanifest" />
+
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=optional" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=optional" /></noscript>
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Parking Helper","description":"Parking data scattered across government open data and map services, turned into a single-step answer inside LINE.","codeRepository":"https://github.com/Eliot5566/Parking-Helper","url":"https://eliot5566.github.io/Su-Xiangyu-Portfolio/en/work/parking-helper.html","inLanguage":"en","author":{"@type":"Person","name":"Eliot Su","url":"https://eliot5566.github.io/Su-Xiangyu-Portfolio/"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Work","item":"https://eliot5566.github.io/Su-Xiangyu-Portfolio/en/#work"},{"@type":"ListItem","position":2,"name":"Parking Helper","item":"https://eliot5566.github.io/Su-Xiangyu-Portfolio/en/work/parking-helper.html"}]}]</script>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-flow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v3a2 2 0 0 0 2 2H14M17.5 14v-3a2 2 0 0 0-2-2H10"/></symbol>
+      <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+      <symbol id="i-printer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-hash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12"/></symbol>
+    </svg>
+
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="nav" id="top">
+      <div class="container nav__inner">
+        <a class="brand" href="../index.html" aria-label="Eliot Su, back to home">
+          <span class="brand__mark" aria-hidden="true">ES</span>
+          <span class="brand__name">Eliot Su<small>蘇祥育</small></span>
+        </a>
+
+        <nav class="nav__links" id="nav-links" aria-label="Main">
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#experience">Experience</a>
+          <a href="../index.html#work" aria-current="page">Work</a>
+          <a href="../index.html#skills">Skills</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+
+        <div class="nav__tools">
+          <button class="icon-btn kbd-btn" type="button" data-palette-open aria-label="Open quick menu" aria-keyshortcuts="Control+K Meta+K /">
+            <svg class="i"><use href="#i-search" /></svg><kbd aria-hidden="true">Ctrl K</kbd>
+          </button>
+          <a class="icon-btn lang" href="../../work/parking-helper.html" hreflang="zh-Hant" lang="zh-Hant" aria-label="切換到中文">中</a>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
+            <svg class="i i--sun"><use href="#i-sun" /></svg>
+            <svg class="i i--moon"><use href="#i-moon" /></svg>
+          </button>
+          <a class="btn btn--primary btn--sm nav__cta" href="../index.html#contact">Get in touch</a>
+          <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <article class="case">
+        <header class="case-hero">
+          <div class="hero__bg" aria-hidden="true"></div>
+          <div class="container">
+            <nav class="crumbs" aria-label="Breadcrumb">
+              <a href="../index.html#work">Work</a><span aria-hidden="true">/</span><span aria-current="page">Parking Helper</span>
+            </nav>
+            <p class="eyebrow" data-enter style="--d: 0.05s"><span>04</span>Case study</p>
+            <h1 data-enter style="--d: 0.12s">Parking Helper</h1>
+            <p class="lead" data-enter style="--d: 0.2s">Send your location on LINE and instantly see where there's a free space, what it costs and how long the drive is.</p>
+            <div class="hero__actions" data-enter style="--d: 0.28s">
+              
+              <a class="btn btn--lg btn--primary" href="https://github.com/Eliot5566/Parking-Helper" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>Source</a>
+            </div>
+            
+            <dl class="case-meta" data-enter style="--d: 0.36s">
+              <div><dt>Role</dt><dd>Solo</dd></div>
+              <div><dt>Year</dt><dd>2025</dd></div>
+              <div><dt>Type</dt><dd>LINE bot · Node.js service</dd></div>
+              <div><dt>Data</dt><dd>Taiwan MOTC TDX · Google Maps Platform · Taipei open data</dd></div>
+            </dl>
+          </div>
+        </header>
+
+        <div class="container">
+          <figure class="case-cover" data-enter style="--d: 0.44s">
+            <picture><source type="image/webp" srcset="../../images/projects/parking-helper-640.webp 640w, ../../images/projects/parking-helper.webp 1200w" sizes="(max-width: 1240px) calc(100vw - 32px), 1184px" /><img src="../../images/projects/parking-helper.jpg" srcset="../../images/projects/parking-helper-640.jpg 640w, ../../images/projects/parking-helper.jpg 1200w" sizes="(max-width: 1240px) calc(100vw - 32px), 1184px" width="1200" height="800" alt="Parking Helper: illustration of a parking sign and a car in a bay" decoding="async" fetchpriority="high" /></picture>
+          </figure>
+
+          <ul class="case-metrics">
+            <li><strong>8</strong><span>TDX endpoints queried in parallel per city</span></li>
+            <li><strong>2.5 km</strong><span>search radius</span></li>
+            <li><strong>5</strong><span>result cards per reply</span></li>
+            <li><strong>10 / min</strong><span>webhook rate limit per IP</span></li>
+          </ul>
+
+          <div class="case-layout">
+            <aside class="toc" aria-label="On this page">
+              <p class="toc__title">On this page</p>
+              <ol>
+                <li><a href="#problem">The problem</a></li>
+                <li><a href="#flow">How it's used</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#decisions">Key design decisions</a></li>
+                <li><a href="#stack">Stack</a></li>
+              </ol>
+            </aside>
+
+            <div class="prose">
+              <section class="case-section" id="problem">
+                <h2>The problem</h2>
+                <p>Finding parking usually means hopping between a map app, a car-park app and government data to piece together where there's space, what it costs and how to get there. Parking Helper puts that inside LINE: send one location, get a ranked answer.</p>
+              </section>
+
+              <section class="case-section" id="flow">
+                <h2>How it's used</h2>
+                <div class="feature-list"><div class="feature-item"><h3>1. Pick a mode</h3><p>Type "car park" or "street parking" and the bot remembers which you want.</p></div><div class="feature-item"><h3>2. Share a location</h3><p>Tap the quick reply to send your current location, or type an address or landmark.</p></div><div class="feature-item"><h3>3. Get the answer</h3><p>Cards for the nearest 5 results with name, address, free spaces, pricing, driving distance and time, and one-tap Google Maps navigation.</p></div></div>
+              </section>
+
+              <section class="case-section" id="architecture">
+                <h2>Architecture</h2>
+                <figure class="diagram"><svg viewBox="0 0 1100 390" role="img" aria-labelledby="dg-title-parking-helper" xmlns="http://www.w3.org/2000/svg">
+<title id="dg-title-parking-helper">Parking Helper architecture</title>
+<defs>
+<marker id="dg-arrow-parking-helper" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-arrowhead" d="M0,0 L10,5 L0,10 z" /></marker>
+<marker id="dg-arrow-accent-parking-helper" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-arrowhead dg-arrowhead--accent" d="M0,0 L10,5 L0,10 z" /></marker>
+</defs>
+<path class="dg-edge" d="M160,185 L195,185" marker-end="url(#dg-arrow-parking-helper)" /><path class="dg-edge dg-edge--accent" d="M335,185 L370,185" marker-end="url(#dg-arrow-accent-parking-helper)" /><path class="dg-edge" d="M560,185 L580,185 L580,62 L600,62" marker-end="url(#dg-arrow-parking-helper)" /><path class="dg-edge" d="M560,185 L580,185 L580,165 L600,165" marker-end="url(#dg-arrow-parking-helper)" /><path class="dg-edge" d="M560,185 L580,185 L580,257 L600,257" marker-end="url(#dg-arrow-parking-helper)" /><path class="dg-edge dg-edge--dashed" d="M560,185 L580,185 L580,342 L600,342" marker-end="url(#dg-arrow-parking-helper)" /><path class="dg-edge" d="M780,165 L796,165 L796,195 L812,195" marker-end="url(#dg-arrow-parking-helper)" /><path class="dg-edge" d="M780,257 L796,257 L796,195 L812,195" marker-end="url(#dg-arrow-parking-helper)" /><path class="dg-edge dg-edge--dashed" d="M780,342 L796,342 L796,195 L812,195" marker-end="url(#dg-arrow-parking-helper)" /><path class="dg-edge" d="M892,135 L892,94" marker-end="url(#dg-arrow-parking-helper)" /><path class="dg-edge dg-edge--accent" d="M972,62 L1042,62 L1042,150" marker-end="url(#dg-arrow-accent-parking-helper)" /><g class="dg-box"><rect x="20" y="150" width="140" height="70" rx="12" /><text class="dg-label" x="90" y="181" text-anchor="middle">LINE user</text><text class="dg-sub" x="90" y="199" text-anchor="middle">location / address</text></g><g class="dg-box"><rect x="195" y="150" width="140" height="70" rx="12" /><text class="dg-label" x="265" y="181" text-anchor="middle">LINE Platform</text><text class="dg-sub" x="265" y="199" text-anchor="middle">Webhook</text></g><g class="dg-box dg-box--accent"><rect x="370" y="130" width="190" height="110" rx="12" /><text class="dg-label" x="465" y="172" text-anchor="middle">Express service</text><text class="dg-sub" x="465" y="190" text-anchor="middle">signature check</text><text class="dg-sub" x="465" y="208" text-anchor="middle">10 req/min/IP limit</text></g><g class="dg-box"><rect x="600" y="30" width="180" height="64" rx="12" /><text class="dg-label" x="690" y="58" text-anchor="middle">Google Geocoding</text><text class="dg-sub" x="690" y="76" text-anchor="middle">coords → city</text></g><g class="dg-box"><rect x="600" y="125" width="180" height="80" rx="12" /><text class="dg-label" x="690" y="152" text-anchor="middle">TDX (MOTC)</text><text class="dg-sub" x="690" y="170" text-anchor="middle">4 car-park endpoints</text><text class="dg-sub" x="690" y="188" text-anchor="middle">4 on-street endpoints</text></g><g class="dg-box"><rect x="600" y="225" width="180" height="64" rx="12" /><text class="dg-label" x="690" y="253" text-anchor="middle">Google Places</text><text class="dg-sub" x="690" y="271" text-anchor="middle">extra car parks</text></g><g class="dg-box"><rect x="600" y="310" width="180" height="64" rx="12" /><text class="dg-label" x="690" y="338" text-anchor="middle">Taipei open data</text><text class="dg-sub" x="690" y="356" text-anchor="middle">fallback</text></g><g class="dg-box"><rect x="812" y="135" width="160" height="120" rx="12" /><text class="dg-label" x="892" y="173" text-anchor="middle">Merge · rank</text><text class="dg-sub" x="892" y="191" text-anchor="middle">dedupe within ~20 m</text><text class="dg-sub" x="892" y="209" text-anchor="middle">within 2.5 km</text><text class="dg-sub" x="892" y="227" text-anchor="middle">by distance</text></g><g class="dg-box"><rect x="812" y="30" width="160" height="64" rx="12" /><text class="dg-label" x="892" y="58" text-anchor="middle">Distance Matrix</text><text class="dg-sub" x="892" y="76" text-anchor="middle">drive time</text></g><g class="dg-box dg-box--accent"><rect x="992" y="150" width="100" height="90" rx="12" /><text class="dg-label" x="1042" y="182" text-anchor="middle">Flex cards</text><text class="dg-sub" x="1042" y="200" text-anchor="middle">top 5</text><text class="dg-sub" x="1042" y="218" text-anchor="middle">1-tap nav</text></g>
+</svg><p class="diagram__hint" aria-hidden="true">← Scroll sideways to see the whole diagram →</p><figcaption>Coordinates resolve to a city first; TDX and Google Places are queried in parallel, merged and de-duplicated before driving distances are computed.</figcaption></figure>
+              </section>
+
+              <section class="case-section" id="decisions">
+                <h2>Key design decisions</h2>
+                <div class="decisions"><article class="decision"><span class="decision__num">01</span><h3>Parallel, fault-tolerant queries per city</h3><p>Reverse geocoding picks the city, then <code>Promise.allSettled</code> calls that city's TDX endpoints in parallel (car parks, facilities, live availability, rates; or road segments, availability, rates, charging hours) so one failing endpoint never sinks the rest.</p></article><article class="decision"><span class="decision__num">02</span><h3>De-duplicating across sources</h3><p>TDX and Google Places results are merged, points within about 20 m are treated as the same place, and only those within 2.5 km are kept, sorted by distance.</p></article><article class="decision"><span class="decision__num">03</span><h3>Token caching</h3><p>TDX uses OAuth client credentials; the access token is cached until 60 seconds before it expires.</p></article><article class="decision"><span class="decision__num">04</span><h3>Protecting API quotas</h3><p>The webhook allows 10 requests per minute per IP. A lookup costs about 3 TDX calls and 5 Distance Matrix elements, which Google's free tier covers for thousands of users a day.</p></article><article class="decision"><span class="decision__num">05</span><h3>Degrade, don't fail</h3><p>When TDX has no data the bot falls back to Taipei open data, and every reply carries a plain-text summary so results are readable even without cards.</p></article></div>
+              </section>
+
+              <section class="case-section" id="stack">
+                <h2>Stack</h2>
+                <ul class="tags"><li>Node.js</li><li>Express 5</li><li>LINE Messaging API</li><li>LIFF</li><li>axios</li><li>express-rate-limit</li><li>TDX API (OAuth 2.0)</li><li>Google Geocoding</li><li>Google Places</li><li>Distance Matrix</li></ul>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <nav class="case-nav container" aria-label="More case studies">
+          <a class="case-nav__link" href="order-system.html" rel="prev"><span>← Previous case study</span><strong>Mobile ordering system</strong></a>
+          <a class="case-nav__all" href="../index.html#work">All work</a>
+          <a class="case-nav__link case-nav__link--next" href="shiyueguo.html" rel="next"><span>Next case study →</span><strong>ShiYueGuo · Japanese sweets shop</strong></a>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <p class="footer__name">Eliot Su 蘇祥育</p>
+          <p>© <span data-year>2026</span> · Hand-written HTML / CSS / JS, hosted on GitHub Pages</p>
+          <p class="footer__hint">Press <kbd data-shortcut-hint>Ctrl K</kbd> for the quick menu</p>
+        </div>
+        <ul class="footer__icons">
+          <li><a href="https://github.com/Eliot5566" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github" /></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/eliot-su-6a834227b/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin" /></svg></a></li>
+          <li><a href="https://www.instagram.com/a7868781/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i"><use href="#i-instagram" /></svg></a></li>
+          <li><a href="mailto:a7868783@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail" /></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <a class="to-top" href="#top" aria-label="Back to top">
+      <svg class="ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" /></svg>
+      <svg class="i"><use href="#i-arrow-up" /></svg>
+    </a>
+    <div class="toast" role="status" aria-live="polite" data-copied="Email copied"></div>
+
+    <script src="../../assets/js/site.js" defer></script>
+  </body>
+</html>

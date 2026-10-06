@@ -7,6 +7,12 @@
   var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   var isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
   var GH_USER = "Eliot5566";
+  var langLink = document.querySelector(".nav__tools .lang");
+  var siteBase = (function () {
+    var css = document.querySelector('link[href$="assets/css/site.css"]');
+    return css ? css.getAttribute("href").replace("assets/css/site.css", "") : "";
+  })();
+  var langBase = EN ? siteBase + "en/" : siteBase;
 
   var T = EN
     ? {
@@ -37,11 +43,15 @@
         certs: "Courses & certificates",
         theme: "Toggle dark mode",
         lang: "切換到中文",
-        langHref: "../",
         copy: "Copy email",
         mail: "Send an email",
         print: "Print / save as PDF résumé",
         top: "Back to top",
+        gToc: "On this page",
+        gCases: "Case studies",
+        caseHint: "Read the case study",
+        resume: "Open résumé",
+        pdf: "Download résumé (PDF)",
         langHint: "這個網站也有中文版。",
         langGo: "前往中文版",
         dismiss: "Dismiss",
@@ -77,11 +87,15 @@
         certs: "進修與證書",
         theme: "切換深色／淺色模式",
         lang: "Switch to English",
-        langHref: "en/",
         copy: "複製 Email",
         mail: "寄信給我",
         print: "列印／存成 PDF 履歷",
         top: "回到頁首",
+        gToc: "本頁內容",
+        gCases: "案例研究",
+        caseHint: "閱讀案例研究",
+        resume: "開啟線上履歷",
+        pdf: "下載履歷 PDF",
         langHint: "This site is also available in English.",
         langGo: "View in English",
         dismiss: "關閉",
@@ -127,6 +141,7 @@
 
   function scrollToEl(target) {
     if (!target) return;
+    root.classList.add("cv-done");
     target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
   }
 
@@ -287,69 +302,38 @@
   window.addEventListener("resize", onScroll);
   onScroll();
 
-  /* ---------- Hero: tabs, typing, spotlight ---------- */
-  var tabs = $$('.term__tabs [role="tab"]');
-
-  function selectTab(tab) {
-    tabs.forEach(function (t) {
-      var on = t === tab;
-      t.setAttribute("aria-selected", String(on));
-      t.tabIndex = on ? 0 : -1;
-      document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+  var tocLinks = $$('.toc a[href^="#"]');
+  if (tocLinks.length) {
+    var tocTargets = tocLinks.map(function (a) {
+      return document.getElementById(a.getAttribute("href").slice(1));
     });
+    var tocTick = false;
+    var tocSpy = function () {
+      var line = window.innerHeight * 0.3;
+      var current = 0;
+      tocTargets.forEach(function (s, k) {
+        if (s && s.getBoundingClientRect().top <= line) current = k;
+      });
+      tocLinks.forEach(function (a, k) {
+        if (k === current) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+      });
+      tocTick = false;
+    };
+    window.addEventListener(
+      "scroll",
+      function () {
+        if (!tocTick) {
+          requestAnimationFrame(tocSpy);
+          tocTick = true;
+        }
+      },
+      { passive: true }
+    );
+    tocSpy();
   }
 
-  tabs.forEach(function (tab, i) {
-    tab.addEventListener("click", function () {
-      selectTab(tab);
-    });
-    tab.addEventListener("keydown", function (e) {
-      var dir = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
-      if (!dir) return;
-      var next = tabs[(i + dir + tabs.length) % tabs.length];
-      selectTab(next);
-      next.focus();
-    });
-  });
-
-  function typeCode(pre) {
-    var nodes = [];
-    var walker = document.createTreeWalker(pre, NodeFilter.SHOW_TEXT);
-    var node;
-    pre.style.minHeight = pre.offsetHeight + "px";
-    pre.setAttribute("aria-busy", "true");
-    while ((node = walker.nextNode())) nodes.push({ node: node, text: node.nodeValue });
-    nodes.forEach(function (n) {
-      n.node.nodeValue = "";
-    });
-    var caret = el("span", "cursor");
-    caret.setAttribute("aria-hidden", "true");
-    pre.appendChild(caret);
-    var i = 0;
-    var j = 0;
-    function step() {
-      var budget = 3;
-      while (budget > 0 && i < nodes.length) {
-        var item = nodes[i];
-        if (j < item.text.length) {
-          j++;
-          item.node.nodeValue = item.text.slice(0, j);
-          budget--;
-        }
-        if (j >= item.text.length) {
-          i++;
-          j = 0;
-        }
-      }
-      if (i < nodes.length) setTimeout(step, 18);
-      else pre.removeAttribute("aria-busy");
-    }
-    setTimeout(step, 900);
-  }
-
-  var profile = $("#panel-profile");
-  if (profile && !reduceMotion) typeCode(profile);
-
+  /* ---------- Hero spotlight ---------- */
   var hero = $(".hero");
   var spot = $(".hero__spot");
   if (hero && spot && finePointer && !reduceMotion) {
@@ -369,15 +353,13 @@
   }
 
   /* ---------- Pointer glow + tilt ---------- */
-  $$(".card, .pillar, .skill, .area, .timeline > li, .certs a, .contact__links a, .metrics li, .compose").forEach(function (n) {
-    n.classList.add("glow");
-  });
+  var GLOW = ".card, .pillar, .skill, .area, .timeline > li, .certs a, .contact__links a, .metrics li, .compose, .decision";
 
   if (finePointer) {
     document.addEventListener(
       "pointermove",
       function (e) {
-        var g = e.target.closest && e.target.closest(".glow");
+        var g = e.target.closest && e.target.closest(GLOW);
         if (!g) return;
         var r = g.getBoundingClientRect();
         g.style.setProperty("--mx", e.clientX - r.left + "px");
@@ -443,10 +425,10 @@
       { rootMargin: "0px 0px -8% 0px" }
     );
     $$(
-      ".section__head, .feature, .card, .pillar, .job, .timeline > li, .steps li, .skill, .certs li:not(.is-extra), .about__story, .contact__inner > *, .activity"
+      ".section__head, .feature, .card, .pillar, .job, .timeline > li, .steps li, .skill, .certs li:not(.is-extra), .about__story, .contact__inner > *, .activity, .case-metrics li, .decision, .feature-item, .gallery figure, .case-section > h2, .case-nav__link"
     ).forEach(function (n) {
       var idx = n.parentElement ? Array.prototype.indexOf.call(n.parentElement.children, n) : 0;
-      if (n.matches(".card, .pillar, .timeline > li, .steps li, .skill, .certs li")) n.style.transitionDelay = Math.min(idx % 6, 5) * 0.07 + "s";
+      if (n.matches(".card, .pillar, .timeline > li, .steps li, .skill, .certs li, .case-metrics li, .decision, .gallery figure")) n.style.transitionDelay = Math.min(idx % 6, 5) * 0.07 + "s";
       n.classList.add("reveal");
       revealIO.observe(n);
     });
@@ -467,6 +449,56 @@
     });
   }
 
+  /* ---------- Finish deferred rendering when the page is idle ---------- */
+  (function () {
+    var deferred = $$("#about, #experience, #work, #more, #skills, #certificates, .case-layout");
+    if (!deferred.length) return;
+    var idle = function (fn, opts) {
+      return window.requestIdleCallback ? window.requestIdleCallback(fn, opts) : setTimeout(fn, 60);
+    };
+    function next() {
+      var el = deferred.shift();
+      if (!el) {
+        root.classList.add("cv-done");
+        return;
+      }
+      el.classList.add("cv-ready");
+      idle(next, { timeout: 600 });
+    }
+    // Start on the visitor's first interaction, so the extra rendering never
+    // competes with the initial load.
+    var started = false;
+    var events = ["scroll", "wheel", "pointerdown", "keydown", "touchstart"];
+    var start = function () {
+      if (started) return;
+      started = true;
+      events.forEach(function (ev) {
+        window.removeEventListener(ev, start, true);
+      });
+      idle(next, { timeout: 600 });
+    };
+    events.forEach(function (ev) {
+      window.addEventListener(ev, start, { capture: true, passive: true });
+    });
+    // In-page jumps should never land on an estimated position.
+    document.addEventListener(
+      "click",
+      function (e) {
+        var link = e.target.closest && e.target.closest('a[href^="#"]');
+        if (link && !root.classList.contains("cv-done")) root.classList.add("cv-done");
+      },
+      true
+    );
+  })();
+
+  /* ---------- Only animate the current-role border while it is visible ---------- */
+  var job = $(".job");
+  if (job && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      job.classList.toggle("is-onscreen", entries[0].isIntersecting);
+    }).observe(job);
+  }
+
   /* ---------- Process line draws in ---------- */
   var steps = $(".steps");
   if (steps) {
@@ -483,6 +515,22 @@
       );
       stepsIO.observe(steps);
     }
+  }
+
+  /* ---------- Diagrams flow when visible ---------- */
+  var diagrams = $$(".diagram");
+  if (diagrams.length && "IntersectionObserver" in window && !reduceMotion) {
+    var dgIO = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          entry.target.classList.toggle("is-flowing", entry.isIntersecting);
+        });
+      },
+      { threshold: 0.25 }
+    );
+    diagrams.forEach(function (d) {
+      dgIO.observe(d);
+    });
   }
 
   /* ---------- Project filter + search ---------- */
@@ -662,6 +710,13 @@
         pokemon: "3D 列印商品銷售與庫存紀錄",
         "E-Commerce-Website": "拾月菓日式和菓子全端電商",
       };
+  var CASE_LIST = [
+    ["paper-radar", "Paper Radar", "Paper Radar"],
+    ["jev-arena", "Jev Arena", "Jev Arena"],
+    ["order-system", "手機點餐系統", "Mobile ordering system"],
+    ["parking-helper", "停車神隊友", "Parking Helper"],
+    ["shiyueguo", "拾月菓", "ShiYueGuo"],
+  ];
   var SKIP_REPOS = { Eliot5566: 1, "Su-Xiangyu-Portfolio": 1 };
   var rtf = window.Intl && Intl.RelativeTimeFormat ? new Intl.RelativeTimeFormat(EN ? "en" : "zh-TW", { numeric: "auto" }) : null;
 
@@ -818,8 +873,17 @@
 
   function buildPaletteItems() {
     var items = [];
-    navLinks.forEach(function (a) {
-      items.push({ group: T.gNav, label: a.textContent.trim(), icon: "hash", run: scrollToEl.bind(null, $(a.getAttribute("href"))) });
+    $$(".nav__links a").forEach(function (a) {
+      var href = a.getAttribute("href");
+      items.push({
+        group: T.gNav,
+        label: a.textContent.trim(),
+        icon: "hash",
+        run: href.charAt(0) === "#" ? scrollToEl.bind(null, $(href)) : function () { window.location.href = href; },
+      });
+    });
+    $$(".toc a").forEach(function (a) {
+      items.push({ group: T.gToc, label: a.textContent.trim(), icon: "hash", run: scrollToEl.bind(null, $(a.getAttribute("href"))) });
     });
     if ($("#more")) items.splice(3, 0, { group: T.gNav, label: T.more, icon: "hash", run: scrollToEl.bind(null, $("#more")) });
     if ($("#certificates")) items.splice(items.length - 1, 0, { group: T.gNav, label: T.certs, icon: "hash", run: scrollToEl.bind(null, $("#certificates")) });
@@ -829,8 +893,13 @@
       var keys = $$(".tags li, .feature__kicker", f).map(function (n) { return n.textContent; }).join(" ") + " " + $$("a[href]", f).map(function (n) { return n.getAttribute("href").split("/").pop(); }).join(" ");
       items.push({ group: T.gWork, label: h.textContent.trim(), hint: tag ? tag.textContent.trim() : "", keys: keys, icon: "box", run: scrollToEl.bind(null, f) });
     });
+    if (!$(".feature")) CASE_LIST.forEach(function (cs) {
+      items.push({ group: T.gCases, label: cs[EN ? 2 : 1], hint: T.caseHint, icon: "box", keys: cs[0], run: function () { window.location.href = langBase + "work/" + cs[0] + ".html"; } });
+    });
+    items.push({ group: T.gActions, label: T.resume, icon: "file", run: function () { window.location.href = langBase + "resume.html"; } });
+    items.push({ group: T.gActions, label: T.pdf, icon: "arrow-down", run: function () { window.location.href = siteBase + "files/Eliot-Su-Resume-" + (EN ? "en" : "zh") + ".pdf"; } });
     items.push({ group: T.gActions, label: T.theme, icon: "moon", run: function () { toggleTheme(null); } });
-    items.push({ group: T.gActions, label: T.lang, icon: "globe", run: function () { window.location.href = T.langHref; } });
+    items.push({ group: T.gActions, label: T.lang, icon: "globe", run: function () { window.location.href = langLink ? langLink.getAttribute("href") : EN ? "../" : "en/"; } });
     items.push({ group: T.gActions, label: T.copy, hint: EMAIL, icon: "copy", run: function () { copyText(EMAIL); } });
     items.push({ group: T.gActions, label: T.mail, hint: EMAIL, icon: "mail", run: function () { window.location.href = "mailto:" + EMAIL; } });
     items.push({ group: T.gActions, label: T.print, icon: "printer", run: printResume });
@@ -1028,7 +1097,7 @@
       box.lang = EN ? "zh-Hant" : "en";
       box.appendChild(el("span", null, T.langHint));
       var go = el("a", null, T.langGo);
-      go.href = T.langHref;
+      go.href = langLink ? langLink.getAttribute("href") : EN ? "../" : "en/";
       box.appendChild(go);
       var x = el("button");
       x.type = "button";

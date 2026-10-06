@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paper Radar｜案例研究｜蘇祥育 Eliot Su</title>
+    <meta name="description" content="用判斷題取代生成摘要，讓模型讀完整個 arXiv 只要每天約 $0.06，並在真實的系統性回顧資料上驗證準確度。" />
+    <meta name="author" content="蘇祥育 Eliot Su" />
+    <link rel="canonical" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/work/paper-radar.html" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/work/paper-radar.html" />
+    <link rel="alternate" hreflang="en" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/en/work/paper-radar.html" />
+    <link rel="alternate" hreflang="x-default" href="https://eliot5566.github.io/Su-Xiangyu-Portfolio/work/paper-radar.html" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content="蘇祥育 Eliot Su" />
+    <meta property="og:title" content="Paper Radar｜案例研究｜蘇祥育 Eliot Su" />
+    <meta property="og:description" content="用判斷題取代生成摘要，讓模型讀完整個 arXiv 只要每天約 $0.06，並在真實的系統性回顧資料上驗證準確度。" />
+    <meta property="og:url" content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/work/paper-radar.html" />
+    <meta property="og:image" content="https://eliot5566.github.io/Su-Xiangyu-Portfolio/images/og/paper-radar.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d1014" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=optional" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=optional" /></noscript>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Paper Radar","description":"用判斷題取代生成摘要，讓模型讀完整個 arXiv 只要每天約 $0.06，並在真實的系統性回顧資料上驗證準確度。","codeRepository":"https://github.com/Eliot5566/JEV-Paper-Radar","url":"https://eliot5566.github.io/Su-Xiangyu-Portfolio/work/paper-radar.html","inLanguage":"zh-Hant","author":{"@type":"Person","name":"蘇祥育 Eliot Su","url":"https://eliot5566.github.io/Su-Xiangyu-Portfolio/"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"作品","item":"https://eliot5566.github.io/Su-Xiangyu-Portfolio/#work"},{"@type":"ListItem","position":2,"name":"Paper Radar","item":"https://eliot5566.github.io/Su-Xiangyu-Portfolio/work/paper-radar.html"}]}]</script>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-flow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v3a2 2 0 0 0 2 2H14M17.5 14v-3a2 2 0 0 0-2-2H10"/></symbol>
+      <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+      <symbol id="i-printer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-hash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12"/></symbol>
+    </svg>
+
+    <a class="skip" href="#main">跳到主要內容</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="nav" id="top">
+      <div class="container nav__inner">
+        <a class="brand" href="../index.html" aria-label="蘇祥育 Eliot Su，回到首頁">
+          <span class="brand__mark" aria-hidden="true">ES</span>
+          <span class="brand__name">蘇祥育<small>Eliot Su</small></span>
+        </a>
+
+        <nav class="nav__links" id="nav-links" aria-label="主要導覽">
+          <a href="../index.html#about">關於</a>
+          <a href="../index.html#experience">經歷</a>
+          <a href="../index.html#work" aria-current="page">作品</a>
+          <a href="../index.html#skills">技能</a>
+          <a href="../index.html#contact">聯絡</a>
+        </nav>
+
+        <div class="nav__tools">
+          <button class="icon-btn kbd-btn" type="button" data-palette-open aria-label="開啟快速選單" aria-keyshortcuts="Control+K Meta+K /">
+            <svg class="i"><use href="#i-search" /></svg><kbd aria-hidden="true">Ctrl K</kbd>
+          </button>
+          <a class="icon-btn lang" href="../en/work/paper-radar.html" hreflang="en" lang="en" aria-label="Switch to English">EN</a>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="切換深色模式">
+            <svg class="i i--sun"><use href="#i-sun" /></svg>
+            <svg class="i i--moon"><use href="#i-moon" /></svg>
+          </button>
+          <a class="btn btn--primary btn--sm nav__cta" href="../index.html#contact">聯絡我</a>
+          <button class="nav__toggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <article class="case">
+        <header class="case-hero">
+          <div class="hero__bg" aria-hidden="true"></div>
+          <div class="container">
+            <nav class="crumbs" aria-label="麵包屑">
+              <a href="../index.html#work">作品</a><span aria-hidden="true">/</span><span aria-current="page">Paper Radar</span>
+            </nav>
+            <p class="eyebrow" data-enter style="--d: 0.05s"><span>01</span>案例研究</p>
+            <h1 data-enter style="--d: 0.12s">Paper Radar</h1>
+            <p class="lead" data-enter style="--d: 0.2s">每天早上讀完 arXiv 上所有新論文，只把你該讀的那幾篇挑出來。</p>
+            <div class="hero__actions" data-enter style="--d: 0.28s">
+              <a class="btn btn--primary btn--lg" href="https://eliot5566.github.io/JEV-Paper-Radar/public/" target="_blank" rel="noopener">看今天的雷達<svg class="i i--arrow"><use href="#i-arrow" /></svg></a>
+              <a class="btn btn--lg" href="https://github.com/Eliot5566/JEV-Paper-Radar" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>原始碼</a>
+            </div>
+            
+            <dl class="case-meta" data-enter style="--d: 0.36s">
+              <div><dt>角色</dt><dd>獨立開發：設計、實作、評測</dd></div>
+              <div><dt>時間</dt><dd>2026</dd></div>
+              <div><dt>類型</dt><dd>開源工具 · CLI + GitHub Actions</dd></div>
+              <div><dt>授權</dt><dd>MIT · GitHub 28★</dd></div>
+            </dl>
+          </div>
+        </header>
+
+        <div class="container">
+          <figure class="case-cover" data-enter style="--d: 0.44s">
+            <picture><source type="image/webp" srcset="../images/projects/paper-radar-crop-640.webp 640w, ../images/projects/paper-radar-crop.webp 1200w" sizes="(max-width: 1240px) calc(100vw - 32px), 1184px" /><img src="../images/projects/paper-radar-crop.jpg" srcset="../images/projects/paper-radar-crop-640.jpg 640w, ../images/projects/paper-radar-crop.jpg 1200w" sizes="(max-width: 1240px) calc(100vw - 32px), 1184px" width="1200" height="900" alt="Paper Radar 每日頁面：讀了 50 篇論文，挑出 12 篇候選、4 篇必讀" decoding="async" fetchpriority="high" /></picture>
+          </figure>
+
+          <ul class="case-metrics">
+            <li><strong>$0.06</strong><span>每天讀完整個 arXiv（約 1,500 篇）</span></li>
+            <li><strong>96.9%</strong><span>4 份未看過的 Cochrane 回顧召回率</span></li>
+            <li><strong>78%</strong><span>文獻篩選工作量減少</span></li>
+            <li><strong>7</strong><span>每個工作日自動運行的公開雷達</span></li>
+          </ul>
+
+          <div class="case-layout">
+            <aside class="toc" aria-label="本頁內容">
+              <p class="toc__title">本頁內容</p>
+              <ol>
+                <li><a href="#problem">問題</a></li>
+                <li><a href="#idea">核心想法：判斷，而不是摘要</a></li>
+                <li><a href="#architecture">架構</a></li>
+                <li><a href="#decisions">關鍵設計決策</a></li>
+                <li><a href="#screening">延伸：系統性回顧篩選模式</a></li>
+                <li><a href="#results">成果與驗證</a></li>
+                <li><a href="#limits">誠實的限制</a></li>
+                <li><a href="#stack">技術</a></li>
+              </ol>
+            </aside>
+
+            <div class="prose">
+              <section class="case-section" id="problem">
+                <h2>問題</h2>
+                <p>arXiv 每月收到超過 30,000 篇論文（2026 年 6 月為 32,040 篇），每個工作日約 1,500 篇，已經沒有人讀得完整份清單。現有做法各有盲點：</p>
+<ul class="prose-list"><li><strong>關鍵字通知</strong>會漏掉用詞不同的論文。</li><li><strong>Embedding 推薦</strong>會悄悄濾掉不像你過去閱讀的內容。</li><li><strong>用聊天型 LLM 每天跑過全部論文</strong>又慢又貴，所以多數工具只處理預先篩過的一小部分。</li></ul>
+              </section>
+
+              <section class="case-section" id="idea">
+                <h2>核心想法：判斷，而不是摘要</h2>
+                <p>大多數 AI 工具讀完論文後寫一段摘要給你。Paper Radar 不寫任何東西：它對每個研究興趣問模型一個是非題，拿回一個校準過的機率，例如「提出了 agent 評測基準：0.97」，再由程式決定這代表什麼。</p>
+<p>判斷比生成一句話便宜得多，也沒有需要解析的自由文字。成本低到可以讀完全部 1,500 篇，而不是預先篩過的少數，而那正是關鍵字通知和推薦系統弄丟你真正想讀那篇論文的地方。</p>
+              </section>
+
+              <section class="case-section" id="architecture">
+                <h2>架構</h2>
+                <figure class="diagram"><svg viewBox="0 0 1100 320" role="img" aria-labelledby="dg-title-paper-radar" xmlns="http://www.w3.org/2000/svg">
+<title id="dg-title-paper-radar">Paper Radar 處理流程</title>
+<defs>
+<marker id="dg-arrow-paper-radar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-arrowhead" d="M0,0 L10,5 L0,10 z" /></marker>
+<marker id="dg-arrow-accent-paper-radar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-arrowhead dg-arrowhead--accent" d="M0,0 L10,5 L0,10 z" /></marker>
+</defs>
+<path class="dg-edge" d="M190,150 L235,150" marker-end="url(#dg-arrow-paper-radar)" /><path class="dg-edge" d="M375,150 L410,150" marker-end="url(#dg-arrow-paper-radar)" /><path class="dg-edge dg-edge--accent" d="M635,150 L675,150" marker-end="url(#dg-arrow-accent-paper-radar)" /><path class="dg-edge" d="M850,150 L865,150 L865,54 L880,54" marker-end="url(#dg-arrow-paper-radar)" /><path class="dg-edge" d="M850,150 L880,150" marker-end="url(#dg-arrow-paper-radar)" /><path class="dg-edge" d="M850,150 L865,150 L865,246 L880,246" marker-end="url(#dg-arrow-paper-radar)" /><path class="dg-edge dg-edge--dashed" d="M762.5,200 L762.5,280 L635,280" marker-end="url(#dg-arrow-paper-radar)" /><g class="dg-box"><rect x="20" y="80" width="170" height="140" rx="12" /><text class="dg-label" x="105" y="128" text-anchor="middle">資料來源</text><text class="dg-sub" x="105" y="146" text-anchor="middle">arXiv · bioRxiv</text><text class="dg-sub" x="105" y="164" text-anchor="middle">PubMed · RSS</text><text class="dg-sub" x="105" y="182" text-anchor="middle">Reddit · Bluesky</text></g><g class="dg-box"><rect x="235" y="115" width="140" height="70" rx="12" /><text class="dg-label" x="305" y="146" text-anchor="middle">去重</text><text class="dg-sub" x="305" y="164" text-anchor="middle">比對近 14 天</text></g><g class="dg-box dg-box--accent"><rect x="410" y="75" width="225" height="150" rx="12" /><text class="dg-label" x="522.5" y="128" text-anchor="middle">Jev 判讀</text><text class="dg-sub" x="522.5" y="146" text-anchor="middle">每篇論文一次呼叫</text><text class="dg-sub" x="522.5" y="164" text-anchor="middle">每個興趣一個是非題</text><text class="dg-sub" x="522.5" y="182" text-anchor="middle">論文類型 · 是否附程式碼</text></g><g class="dg-box"><rect x="675" y="100" width="175" height="100" rx="12" /><text class="dg-label" x="762.5" y="137" text-anchor="middle">程式決策</text><text class="dg-sub" x="762.5" y="155" text-anchor="middle">max / noisy-OR</text><text class="dg-sub" x="762.5" y="173" text-anchor="middle">門檻 · 排除條件</text></g><g class="dg-box"><rect x="880" y="22" width="210" height="64" rx="12" /><text class="dg-label" x="985" y="50" text-anchor="middle">網頁 + RSS</text><text class="dg-sub" x="985" y="68" text-anchor="middle">GitHub Pages</text></g><g class="dg-box"><rect x="880" y="118" width="210" height="64" rx="12" /><text class="dg-label" x="985" y="146" text-anchor="middle">通知</text><text class="dg-sub" x="985" y="164" text-anchor="middle">Slack · Discord · Telegram</text></g><g class="dg-box"><rect x="880" y="214" width="210" height="64" rx="12" /><text class="dg-label" x="985" y="242" text-anchor="middle">稽核紀錄</text><text class="dg-sub" x="985" y="260" text-anchor="middle">每個決策與機率</text></g><g class="dg-box"><rect x="410" y="252" width="225" height="56" rx="12" /><text class="dg-label" x="522.5" y="276" text-anchor="middle">可選：LLM 一句話摘要</text><text class="dg-sub" x="522.5" y="294" text-anchor="middle">只處理前 10 篇</text></g>
+</svg><p class="diagram__hint" aria-hidden="true">← 左右滑動查看完整架構 →</p><figcaption>資料來源經去重後，每篇論文只呼叫模型一次；分數怎麼組合、門檻怎麼設，全部由程式決定。</figcaption></figure>
+              </section>
+
+              <section class="case-section" id="decisions">
+                <h2>關鍵設計決策</h2>
+                <div class="decisions"><article class="decision"><span class="decision__num">01</span><h3>原子化問題，在程式中組合</h3><p>每個興趣是一個獨立的是非題。相關度預設取 max(權重 × 機率)，也可改用 noisy-OR，讓同時符合多個興趣的論文排得更前面。</p></article><article class="decision"><span class="decision__num">02</span><h3>一次請求問完所有問題</h3><p>同一篇論文的所有問題放進同一次呼叫，興趣變多只增加 token，幾乎不增加延遲。</p></article><article class="decision"><span class="decision__num">03</span><h3>先檢索，再判斷</h3><p>模型只看標題、摘要與分類。作者與機構和主題無關，所以刻意不提供，避免影響判斷。</p></article><article class="decision"><span class="decision__num">04</span><h3>級聯控制成本</h3><p>由判斷模型篩選數千篇；生成式模型（可選）只為最後入選的 10 篇各寫一句摘要。</p></article><article class="decision"><span class="decision__num">05</span><h3>門檻可以自己驗證</h3><p><code>calibrate</code> 指令用你自己的標註算出 Brier score、ECE 與精確率／召回率表，再回推最適合的門檻，不必只相信廠商數字。</p></article><article class="decision"><span class="decision__num">06</span><h3>回饋只要一鍵</h3><p>每篇論文附 👍／👎 連結，點下去會開一個預填好的 GitHub Issue；下一次執行自動收進 <code>labels.jsonl</code> 並關閉 issue。</p></article></div>
+              </section>
+
+              <section class="case-section" id="screening">
+                <h2>延伸：系統性回顧篩選模式</h2>
+                <p>文獻回顧的「標題與摘要篩選」形狀和每日雷達一樣，邏輯卻相反：所有納入條件都要成立，任何一個排除條件就淘汰。所以篩選模式用納入條件的幾何平均計分、保留每一筆被篩過的紀錄，並直接輸出 PRISMA 2020 需要的計數，以及領域常用的 WSS（work saved over sampling）。</p>
+<div class="callout" role="note"><p class="callout__title">一個反直覺的發現</p><p>把複合條件拆成更多條，反而讓某個主題的工作量節省從 10.0% 掉到 0.1%。篩選是「且」的關係，多一條條件就多一次否決的機會，所以應該寫最少、最能從摘要判斷的條件。</p></div>
+              </section>
+
+              <section class="case-section" id="results">
+                <h2>成果與驗證</h2>
+                <p>用 CLEF eHealth 2019 的 Cochrane 回顧資料驗證，比對的是審查者在「標題與摘要階段」的真實決定，篩選條件直接引用各回顧公開的選錄標準。下面 4 份在開發與修正期間完全沒有看過：</p>
+<div class="table-wrap"><table class="data"><thead><tr><th scope="col">保留測試的回顧</th><th scope="col">紀錄數</th><th scope="col">應納入</th><th scope="col">召回率</th><th scope="col">節省工作量</th><th scope="col">成本</th></tr></thead><tbody><tr><th scope="row">降血壓藥：RAS 抑制劑 vs 其他類別</th><td>12,319</td><td>88</td><td>95.5%</td><td>68.1%</td><td>$0.37</td></tr><tr><th scope="row">血栓預防措施的落實</th><td>3,574</td><td>11</td><td>100%</td><td>95.1%</td><td>$0.11</td></tr><tr><th scope="row">青光眼睫狀體破壞手術</th><td>2,456</td><td>12</td><td>100%</td><td>95.8%</td><td>$0.08</td></tr><tr><th scope="row">COPD 患者憂鬱症的心理治療</th><td>1,098</td><td>16</td><td>100%</td><td>92.5%</td><td>$0.03</td></tr></tbody><tfoot><tr><th scope="row">合計</th><td>19,447</td><td>127</td><td>96.9%</td><td>78.0%</td><td>$0.60</td></tr></tfoot></table></div>
+<p>開發期間用過的 8 份回顧表現差很多（合併只有 38–48%）。效能主要取決於回顧本身而不是工具：保留組是大型、低盛行率（0.3–1.5% 應納入）的搜尋，接近真實情境。三輪預先登記的預測，包含猜錯的，都公開在 repo 裡。</p>
+<p>日常使用的實測：50 篇新論文 5 秒判讀完成，花費 $0.002（每篇約 932 個 input tokens）；501 篇 33 秒，花費 $0.02。</p>
+              </section>
+
+              <section class="case-section" id="limits">
+                <h2>誠實的限制</h2>
+                <ul class="prose-list"><li>只讀摘要，不讀全文。</li><li>不是人工篩選者的替代品：適合當第二篩選者，或決定人工閱讀的順序。</li><li>Jev 是 2026 年 9 月才推出的新模型，基準數字由廠商提供，所以要固定模型版本並自行校準。</li></ul>
+              </section>
+
+              <section class="case-section" id="stack">
+                <h2>技術</h2>
+                <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>GitHub Pages</li><li>RSS / Atom</li><li>TOML</li><li>pytest</li><li>TypeSafe Jev API</li><li>OpenRouter</li><li>NCBI E-utilities</li></ul>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <nav class="case-nav container" aria-label="其他案例">
+          <a class="case-nav__link" href="shiyueguo.html" rel="prev"><span>← 上一個案例</span><strong>拾月菓｜日式和菓子電商</strong></a>
+          <a class="case-nav__all" href="../index.html#work">所有作品</a>
+          <a class="case-nav__link case-nav__link--next" href="jev-arena.html" rel="next"><span>下一個案例 →</span><strong>Jev Arena</strong></a>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <p class="footer__name">蘇祥育 Eliot Su</p>
+          <p>© <span data-year>2026</span> · 手寫 HTML / CSS / JS，部署於 GitHub Pages</p>
+          <p class="footer__hint">按 <kbd data-shortcut-hint>Ctrl K</kbd> 開啟快速選單</p>
+        </div>
+        <ul class="footer__icons">
+          <li><a href="https://github.com/Eliot5566" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github" /></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/eliot-su-6a834227b/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin" /></svg></a></li>
+          <li><a href="https://www.instagram.com/a7868781/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i"><use href="#i-instagram" /></svg></a></li>
+          <li><a href="mailto:a7868783@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail" /></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <a class="to-top" href="#top" aria-label="回到頁首">
+      <svg class="ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" /></svg>
+      <svg class="i"><use href="#i-arrow-up" /></svg>
+    </a>
+    <div class="toast" role="status" aria-live="polite" data-copied="已複製 Email"></div>
+
+    <script src="../assets/js/site.js" defer></script>
+  </body>
+</html>
