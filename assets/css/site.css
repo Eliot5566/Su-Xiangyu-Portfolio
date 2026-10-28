@@ -4538,3 +4538,30 @@ picture {
     display: none !important;
   }
 }
+
+/* ---------- Volunteer entry ---------- */
+.job--volunteer .job__logo {
+  background: linear-gradient(135deg, #f59e0b, color-mix(in srgb, #f59e0b 55%, var(--ink)));
+}
+
+.job--volunteer .job__summary {
+  margin-bottom: 22px;
+}
+
+.job__source {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.job__source a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+
+.job__source .i {
+  width: 14px;
+  height: 14px;
+}
