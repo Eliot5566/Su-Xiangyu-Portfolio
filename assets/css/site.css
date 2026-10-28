@@ -3004,7 +3004,7 @@ kbd {
 /* ---------- Print: résumé layout ---------- */
 @media print {
   @page {
-    margin: 14mm 14mm 16mm;
+    margin: 13mm 14mm 13mm;
   }
   body {
     font-size: 11.5pt;
@@ -4278,7 +4278,7 @@ kbd {
 
 @media print {
   .resume {
-    font-size: 8.9pt;
+    font-size: 8.7pt;
     line-height: 1.45;
   }
   .resume h1 {
@@ -4295,14 +4295,14 @@ kbd {
     margin-top: 10px;
   }
   .resume__section {
-    margin-top: 14px;
+    margin-top: 12px;
   }
   .resume h2 {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     padding-bottom: 4px;
   }
   .resume__job + .resume__job {
-    margin-top: 9px;
+    margin-top: 7px;
   }
   .resume__job ul {
     margin-top: 3px;

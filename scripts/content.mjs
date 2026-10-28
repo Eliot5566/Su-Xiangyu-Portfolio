@@ -947,7 +947,7 @@ export const RESUME = {
         title: "網站更新組 志工",
         org: "光復救災資訊整合網（光復超人 GuangFu Hero）",
         when: "2025.09 – 2025.10",
-        bullets: ["2025 年花蓮光復水災期間，加入民間志工團隊的網站更新組，負責前端頁面相關功能調整。平台 28 天內有 12 萬活躍使用者、116 萬事件，上線一個月媒合超過 9,000 名志工。"],
+        bullets: ["2025 花蓮光復水災期間負責救災平台前端頁面功能調整；平台 28 天 12 萬活躍使用者，一個月媒合逾 9,000 名志工。"],
       },
       {
         title: "前端工程師就業養成班",
@@ -1017,9 +1017,9 @@ export const RESUME = {
       },
       {
         title: "Volunteer, Website Update Team",
-        org: "Guangfu Disaster Relief Info Hub (GuangFu Hero)",
+        org: "GuangFu Hero relief platform",
         when: "Sep 2025 – Oct 2025",
-        bullets: ["During the 2025 Guangfu flood in Hualien, worked on front-end page features for a volunteer-built relief hub on its website update team. 120K active users and 1.16M events in 28 days; more than 9,000 volunteers matched in the first month."],
+        bullets: ["Front-end features for a 2025 Hualien flood relief site; 120K users in 28 days, 9,000+ volunteers matched."],
       },
       {
         title: "Front-end Engineering Bootcamp",
